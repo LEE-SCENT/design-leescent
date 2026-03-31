@@ -254,10 +254,10 @@
   <script>
     var img = document.querySelector('.profile-image');
     img.addEventListener('click', function () {
-      if (img.classList.contains('is-spinning')) return;
-      img.classList.add('is-spinning');
+      if (img.classList.contains('is-dropping')) return;
+      img.classList.add('is-dropping');
       img.addEventListener('animationend', function () {
-        img.classList.remove('is-spinning');
+        img.classList.remove('is-dropping');
       }, { once: true });
     });
   </script>
