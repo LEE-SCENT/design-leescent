@@ -639,6 +639,7 @@ a {
 
   .about-cv-btn {
     border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
   }
 
   .experience-section {
