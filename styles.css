@@ -652,6 +652,10 @@ a {
   flex-direction: column;
 }
 
+.cases-item:first-child {
+  border-top: 1px solid var(--white);
+}
+
 .cases-item {
   position: relative;
   display: flex;
@@ -815,16 +819,10 @@ a {
     padding-bottom: 80px;
   }
 
-  .cases-col-header {
-    flex: none;
-  }
-
+  .cases-col-header,
   .cases-col-body {
-    flex: none;
-  }
-
-  .cases-item:first-child {
-    border-top: 1px solid var(--white);
+    flex: 0 0 100%;
+    width: 100%;
   }
 
   .cases-item-name,
