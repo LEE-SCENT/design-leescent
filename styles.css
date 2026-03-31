@@ -689,6 +689,25 @@ a {
   color: var(--white);
 }
 
+.cases-item-tbd {
+  justify-content: space-between;
+}
+
+.cases-item-update-soon {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  white-space: nowrap;
+  color: transparent;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.cases-item-tbd:hover .cases-item-update-soon {
+  color: #9747ff;
+}
+
 /* ─── Responsive ────────────────────────────── */
 @media (max-width: 1600px) {
   .container {
