@@ -285,6 +285,11 @@ a {
   color: var(--black);
 }
 
+.footer-link-text span,
+.arrow {
+  color: #00E600;
+}
+
 .footer-link-text {
   position: relative;
   z-index: 2;
