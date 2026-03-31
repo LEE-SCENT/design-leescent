@@ -689,3 +689,11 @@ a {
     border-top: 1px solid var(--white);
   }
 }
+
+@media (min-width: 901px) and (max-width: 1072px) {
+  .exp-header {
+    flex-direction: column;
+    gap: 4px;
+    white-space: normal;
+  }
+}
