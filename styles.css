@@ -59,6 +59,7 @@ a {
 
 /* ─── Heading / Nav ────────────────────────────── */
 .heading {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -66,6 +67,9 @@ a {
 }
 
 .copyright {
+  position: absolute;
+  top: 40px;
+  right: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -320,9 +324,9 @@ a {
 
 /* ─── About Page ────────────────────────────── */
 .about-heading {
+  position: relative;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   padding: 40px 20px;
 }
 
@@ -783,10 +787,6 @@ a {
     padding-right: 12px;
   }
 
-  .about-heading {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
 
   .about-title {
     font-size: 48px;
