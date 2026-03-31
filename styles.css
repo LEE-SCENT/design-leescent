@@ -666,7 +666,6 @@ a {
   border-bottom: 1px solid var(--white);
   border-left: 1px solid var(--white);
   border-right: 1px solid var(--white);
-  overflow: hidden;
   isolation: isolate;
   cursor: pointer;
   transition: color 0.25s ease;
@@ -677,13 +676,17 @@ a {
   position: absolute;
   inset: 0;
   background: var(--white);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.3s ease;
+  z-index: 1;
+}
+
+.cases-item:hover {
   z-index: 1;
 }
 
 .cases-item:hover::before {
-  transform: translateX(0);
+  clip-path: inset(0 0% 0 0);
 }
 
 .cases-item:hover .cases-item-name {
@@ -692,6 +695,25 @@ a {
 
 .cases-item:hover .cases-item-date {
   color: var(--black);
+}
+
+.cases-item-thumbnail {
+  position: absolute;
+  right: calc(100% + 20px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 748px;
+  height: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.cases-item:hover .cases-item-thumbnail {
+  opacity: 1;
 }
 
 
@@ -778,6 +800,12 @@ a {
 
   .hero-title .and {
     font-size: 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cases-item-thumbnail {
+    display: none;
   }
 }
 
