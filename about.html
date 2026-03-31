@@ -251,5 +251,15 @@
 
     </div>
   </div>
+  <script>
+    var img = document.querySelector('.profile-image');
+    img.addEventListener('click', function () {
+      if (img.classList.contains('is-falling')) return;
+      img.classList.add('is-falling');
+      img.addEventListener('animationend', function () {
+        img.classList.remove('is-falling');
+      }, { once: true });
+    });
+  </script>
 </body>
 </html>
