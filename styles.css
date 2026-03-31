@@ -673,3 +673,15 @@ a {
     flex: 1 1 50%;
   }
 }
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .footer-links {
+    width: 100%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 919px) {
+  .footer-links {
+    border-top: 1px solid var(--white);
+  }
+}
