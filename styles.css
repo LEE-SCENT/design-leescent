@@ -31,7 +31,6 @@ a {
   text-decoration: none;
 }
 
-/* ─── Layout ─────────────────────────────────── */
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -47,7 +46,6 @@ a {
   flex: 1;
 }
 
-/* ─── Heading / Nav ────────────────────────────── */
 .heading {
   display: flex;
   align-items: flex-start;
@@ -63,7 +61,6 @@ a {
   white-space: nowrap;
 }
 
-/* ─── Home Title ────────────────────────────── */
 .hero-title {
   font-family: var(--font-helvetica);
   font-weight: 500;
@@ -79,7 +76,6 @@ a {
   letter-spacing: normal;
 }
 
-/* ─── Body Section ────────────────────────────── */
 .body-section {
   display: flex;
   border-top: 1px solid var(--white);
@@ -99,7 +95,6 @@ a {
   align-self: stretch;
 }
 
-/* ─── Menu Items ────────────────────────────── */
 .menu-group {
   flex: 1;
   display: flex;
@@ -169,7 +164,6 @@ a {
   line-height: 28px;
 }
 
-/* ─── Footer ────────────────────────────── */
 .footer {
   display: flex;
   flex-direction: column;
@@ -292,7 +286,6 @@ a {
   gap: 4px;
 }
 
-/* ─── About Page ────────────────────────────── */
 .about-heading {
   display: flex;
   align-items: flex-start;
@@ -338,7 +331,6 @@ a {
   white-space: nowrap;
 }
 
-/* ─── About Profile Section ────────────────────── */
 .about-section {
   display: flex;
   border-top: 1px solid var(--white);
@@ -429,7 +421,6 @@ a {
   gap: 4px;
 }
 
-/* ─── Experience Section ────────────────────────── */
 .experience-section {
   display: flex;
   border-top: 1px solid var(--white);
@@ -530,7 +521,6 @@ a {
   font-weight: 500;
 }
 
-/* ─── About Footer (dimmed) ────────────────────── */
 .about-footer-name .footer-name-wrap {
   opacity: 0.25;
 }
@@ -539,7 +529,6 @@ a {
   cursor: pointer;
 }
 
-/* ─── Responsive ────────────────────────────── */
 @media (max-width: 1600px) {
   .container {
     width: 100%;
@@ -552,11 +541,9 @@ a {
     font-size: 72px;
     letter-spacing: -1.44px;
   }
-
   .hero-title .and {
     font-size: 48px;
   }
-
   .footer-name {
     font-size: 120px;
   }
@@ -566,46 +553,37 @@ a {
   .body-section {
     flex-direction: column;
   }
-
   .hero-title {
     font-size: 48px;
     letter-spacing: -0.96px;
   }
-
   .hero-title .and {
     font-size: 32px;
   }
-
   .footer-name {
     font-size: 72px;
   }
-
   .about-section {
     flex-direction: column;
     padding-bottom: 80px;
   }
-
   .about-text-col {
     border-left: none;
     border-right: none;
     border-top: 1px solid var(--white);
   }
-
   .experience-section {
     flex-direction: column;
     padding-bottom: 80px;
   }
-
   .profile-image {
     width: 100%;
     max-width: 320px;
     height: 320px;
   }
-
   .about-profile-col {
     padding: 40px;
   }
-
   .exp-header {
     flex-direction: column;
     gap: 4px;
