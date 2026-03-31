@@ -702,8 +702,9 @@ a {
   right: calc(100% + 20px);
   top: 50%;
   transform: translateY(-50%);
-  width: 748px;
-  height: 380px;
+  width: min(748px, calc(50vw - 60px));
+  aspect-ratio: 748 / 380;
+  height: auto;
   border-radius: 20px;
   object-fit: cover;
   pointer-events: none;
@@ -803,7 +804,7 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .cases-item-thumbnail {
     display: none;
   }
