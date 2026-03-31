@@ -596,6 +596,99 @@ a {
   cursor: pointer;
 }
 
+/* ─── Cases Page ────────────────────────────── */
+.cases-description {
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.32px;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.cases-description .en {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+}
+
+.cases-section {
+  display: flex;
+  border-top: 1px solid var(--white);
+  padding-bottom: 240px;
+}
+
+.cases-col-header {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+  align-self: stretch;
+}
+
+.cases-company {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.cases-type {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.36px;
+  color: var(--white-50);
+  white-space: nowrap;
+}
+
+.cases-col-body {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cases-item {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 24px;
+  border-bottom: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  cursor: pointer;
+}
+
+.cases-item-name {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.cases-item-date {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.cases-item-tbd .cases-item-name {
+  color: #333;
+}
+
+.cases-item-tbd .cases-item-name .tbd-label {
+  color: var(--white);
+}
+
 /* ─── Responsive ────────────────────────────── */
 @media (max-width: 1600px) {
   .container {
@@ -660,6 +753,28 @@ a {
     border-top: 1px solid var(--white);
   }
 
+  .cases-section {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
+  .cases-col-header {
+    flex: none;
+  }
+
+  .cases-col-body {
+    flex: none;
+  }
+
+  .cases-item:first-child {
+    border-top: 1px solid var(--white);
+  }
+
+  .cases-item-name,
+  .cases-item-date {
+    white-space: normal;
+  }
+
 
   .profile-image {
     max-width: 100%;
@@ -704,6 +819,15 @@ a {
   .exp-header {
     flex-direction: column;
     gap: 4px;
+    white-space: normal;
+  }
+
+  .cases-item {
+    flex-wrap: wrap;
+  }
+
+  .cases-item-name,
+  .cases-item-date {
     white-space: normal;
   }
 }
