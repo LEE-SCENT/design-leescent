@@ -285,7 +285,11 @@ a {
   color: var(--black);
 }
 
-.footer-link-text span,
+.footer-link-text span {
+  color: var(--white);
+  font-family: var(--font-pretendard);
+}
+
 .arrow {
   color: #00E600;
 }
