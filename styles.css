@@ -481,7 +481,7 @@ a {
 .experience-section {
   display: flex;
   border-top: 1px solid var(--white);
-  padding-bottom: 240px;
+  padding-bottom: 32px;
 }
 
 .experience-label-col {
@@ -629,6 +629,10 @@ a {
     border-left: none;
     border-right: none;
     border-top: 1px solid var(--white);
+  }
+
+  .about-cv-btn {
+    border-left: 1px solid var(--white);
   }
 
   .experience-section {
