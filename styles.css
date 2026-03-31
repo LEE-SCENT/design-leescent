@@ -783,6 +783,21 @@ a {
     padding-right: 12px;
   }
 
+  .about-heading {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .about-title {
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    white-space: normal;
+  }
+
+  .cases-description {
+    white-space: normal;
+  }
+
   .body-section {
     flex-direction: column;
   }
