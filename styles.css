@@ -634,6 +634,11 @@ a {
   .experience-section {
     flex-direction: column;
     padding-bottom: 80px;
+    border-top: none;
+  }
+
+  .experience-item:first-child {
+    border-top: 1px solid var(--white);
   }
 
   .profile-image {
