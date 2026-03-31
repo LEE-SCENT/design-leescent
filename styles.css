@@ -219,7 +219,7 @@ a {
 
 .footer-location {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -237,7 +237,7 @@ a {
   flex: 1;
   padding: 20px;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.35;
   letter-spacing: -0.36px;
