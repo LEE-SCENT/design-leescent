@@ -599,7 +599,7 @@ a {
 /* ─── Cases Page ────────────────────────────── */
 .cases-description {
   font-family: var(--font-pretendard);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: -0.32px;
@@ -609,7 +609,7 @@ a {
 
 .cases-description .en {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .cases-section {
@@ -629,7 +629,7 @@ a {
 
 .cases-company {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -638,7 +638,7 @@ a {
 
 .cases-type {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: -0.36px;
@@ -665,7 +665,7 @@ a {
 
 .cases-item-name {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -695,7 +695,7 @@ a {
 
 .cases-item-update-soon {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1;
   white-space: nowrap;
