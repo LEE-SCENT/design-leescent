@@ -694,18 +694,19 @@ a {
 .cases-item-name {
   position: relative;
   z-index: 2;
+  min-width: 0;
   font-family: var(--font-helvetica);
   font-weight: 400;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
-  white-space: nowrap;
   transition: color 0.25s ease;
 }
 
 .cases-item-date {
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
   font-family: var(--font-helvetica);
   font-weight: 400;
   font-size: 18px;
@@ -824,6 +825,7 @@ a {
   .cases-section {
     flex-direction: column;
     padding-bottom: 80px;
+    border-top: none;
   }
 
   .cases-col-header,
@@ -835,12 +837,6 @@ a {
   .cases-item:first-child {
     border-top: 1px solid var(--white);
   }
-
-  .cases-item-name,
-  .cases-item-date {
-    white-space: normal;
-  }
-
 
   .profile-image {
     max-width: 100%;
@@ -888,12 +884,4 @@ a {
     white-space: normal;
   }
 
-  .cases-item {
-    flex-wrap: wrap;
-  }
-
-  .cases-item-name,
-  .cases-item-date {
-    white-space: normal;
-  }
 }
