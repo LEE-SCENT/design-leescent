@@ -479,6 +479,10 @@ a {
   gap: 4px;
 }
 
+.cv-text span {
+  font-family: var(--font-pretendard);
+}
+
 /* ─── Experience Section ────────────────────────── */
 .experience-section {
   display: flex;
