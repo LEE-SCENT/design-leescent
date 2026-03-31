@@ -18,6 +18,10 @@
   --font-sans: var(--font-helvetica);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   background-color: var(--black);
   color: var(--white);
@@ -84,6 +88,7 @@ a {
 .body-section {
   display: flex;
   border-top: 1px solid var(--white);
+  padding-bottom: 400px;
 }
 
 .body-left {
