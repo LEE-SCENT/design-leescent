@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+::selection {
+  background-color: #00E600;
+  color: #000000;
+}
+
 :root {
   --white: #ffffff;
   --black: #000000;
