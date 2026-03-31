@@ -420,7 +420,7 @@ a {
 
 .about-bio {
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 40px;
   border-bottom: 1px solid var(--white);
   display: flex;
   flex-direction: column;
@@ -611,6 +611,11 @@ a {
 }
 
 @media (max-width: 900px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .body-section {
     flex-direction: column;
   }
