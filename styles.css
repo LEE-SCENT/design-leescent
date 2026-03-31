@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,14 +13,15 @@
   --white-25: rgba(255, 255, 255, 0.25);
   --container-width: 1536px;
   --font-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-garamond: 'Cormorant Garamond', Georgia, serif;
+  --font-pretendard: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-garamond: 'Apple Garamond', Georgia, serif;
   --font-sans: var(--font-helvetica);
 }
 
 html, body {
   background-color: var(--black);
   color: var(--white);
-  font-family: var(--font-helvetica);
+  font-family: 'Helvetica Neue', Helvetica, Pretendard, Arial, sans-serif;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -105,6 +106,7 @@ a {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  border-left: 1px solid var(--white);
 }
 
 .menu-item {
@@ -243,6 +245,7 @@ a {
   flex: 1;
   display: flex;
   cursor: pointer;
+  border-left: 1px solid var(--white);
 }
 
 .footer-link {
