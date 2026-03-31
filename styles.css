@@ -556,10 +556,6 @@ a {
   .hero-title .and {
     font-size: 48px;
   }
-
-  .footer-name {
-    font-size: 120px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -574,10 +570,6 @@ a {
 
   .hero-title .and {
     font-size: 32px;
-  }
-
-  .footer-name {
-    font-size: 72px;
   }
 
   .about-section {
