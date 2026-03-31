@@ -853,6 +853,12 @@ a {
     border-top: 1px solid var(--white);
   }
 
+  .cases-item-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .profile-image {
     max-width: 100%;
   }
