@@ -285,6 +285,10 @@ a {
   color: var(--black);
 }
 
+.footer-link:hover .footer-link-text span {
+  color: var(--black);
+}
+
 .footer-link-text span {
   color: var(--white);
   font-family: var(--font-pretendard);
