@@ -372,7 +372,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 60px;
 }
 
 .profile-image {
@@ -491,8 +491,7 @@ a {
 }
 
 .experience-label-col {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 50%;
   padding: 20px 20px 32px;
   align-self: stretch;
 }
@@ -507,8 +506,7 @@ a {
 }
 
 .experience-items-col {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
 }
