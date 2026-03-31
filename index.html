@@ -38,11 +38,14 @@
           <a href="contact.html" class="menu-item">
             <span class="menu-item-text">Contact</span>
           </a>
+          <a href="#page-footer" class="menu-item">
+            <span class="menu-item-text">Content</span>
+          </a>
         </nav>
       </div>
 
       <!-- Footer -->
-      <footer class="footer">
+      <footer class="footer" id="page-footer">
         <div class="footer-name-wrap">
           <div class="footer-name">
             <span class="name-regular">Jihyang</span>
@@ -75,5 +78,24 @@
 
     </div>
   </div>
+  <script>
+    (function () {
+      function fitFooterName() {
+        var el = document.querySelector('.footer-name');
+        if (!el) return;
+        var parent = el.parentElement;
+        var lo = 8, hi = 600;
+        while (hi - lo > 0.5) {
+          var mid = (lo + hi) / 2;
+          el.style.fontSize = mid + 'px';
+          if (el.scrollWidth <= parent.clientWidth) lo = mid;
+          else hi = mid;
+        }
+        el.style.fontSize = lo + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fitFooterName);
+      window.addEventListener('resize', fitFooterName);
+    })();
+  </script>
 </body>
 </html>
