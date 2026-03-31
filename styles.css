@@ -323,7 +323,7 @@ a {
   gap: 10px;
   cursor: pointer;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 1.35;
   color: var(--white);
@@ -338,7 +338,7 @@ a {
 
 .about-title {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 72px;
   line-height: 1;
   letter-spacing: -1.44px;
@@ -385,7 +385,7 @@ a {
   flex-direction: column;
   gap: 20px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.36px;
   color: var(--white);
@@ -426,7 +426,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1;
   color: var(--white);
@@ -452,7 +452,7 @@ a {
 
 .experience-label {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   line-height: 1;
   color: var(--white);
@@ -480,7 +480,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -513,7 +513,7 @@ a {
   list-style: disc;
   padding-left: 27px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.36px;
   color: var(--white);
@@ -527,7 +527,7 @@ a {
 
 .exp-list .en {
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -535,7 +535,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* ─── About Footer (dimmed) ────────────────────── */
