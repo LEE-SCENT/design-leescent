@@ -483,12 +483,12 @@ a {
 .experience-section {
   display: flex;
   border-top: 1px solid var(--white);
-  padding-bottom: 32px;
+  padding-bottom: 240px;
 }
 
 .experience-label-col {
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 32px;
   align-self: stretch;
 }
 
