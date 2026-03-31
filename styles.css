@@ -693,9 +693,6 @@ a {
   color: var(--black);
 }
 
-.cases-item-tbd:hover .tbd-label {
-  color: var(--black);
-}
 
 .cases-item-name {
   position: relative;
@@ -731,6 +728,19 @@ a {
 
 .cases-item-tbd {
   justify-content: space-between;
+  cursor: default;
+}
+
+.cases-item-tbd::before {
+  display: none;
+}
+
+.cases-item-tbd:hover .cases-item-name {
+  color: #333;
+}
+
+.cases-item-tbd:hover .tbd-label {
+  color: var(--white);
 }
 
 .cases-item-update-soon {
