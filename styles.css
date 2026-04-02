@@ -1653,17 +1653,18 @@ a {
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 14px 22px;
+  gap: 4px;
+  padding: 12px 24px;
   background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   border-radius: 99px;
   border: none;
   cursor: pointer;
   font-family: var(--font-pretendard);
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.35;
   color: white;
   white-space: nowrap;
   transition: background 0.15s;
@@ -1674,8 +1675,8 @@ a {
 }
 
 .case-zoom-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
 }
 
