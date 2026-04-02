@@ -1360,57 +1360,62 @@ a {
 
 .case-footer-nav {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   border-top: 1px solid var(--white);
-  min-height: 64px;
-  padding: 0;
+  padding: 0 20px;
+  gap: 24px;
   margin-top: auto;
 }
 
-.case-footer-nav-links {
-  flex: 1;
-  border-left: 1px solid var(--white);
+.case-footer-nav-header {
+  width: 374px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--white);
+  padding: 20px 0;
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-self: stretch;
 }
 
-.case-footer-nav-link {
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  height: 64px;
+.case-footer-nav-title {
   font-family: var(--font-helvetica);
   font-weight: 500;
   font-size: 20px;
+  line-height: 1;
+  color: var(--white-50);
+  white-space: nowrap;
+}
+
+.case-footer-nav-body {
+  flex: 1;
+  min-width: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.case-footer-nav-link {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
   color: var(--white);
   white-space: nowrap;
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  transition: color 0.25s ease;
-  border-right: 1px solid var(--white);
-}
-
-.case-footer-nav-link::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--white);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: 1;
-}
-
-.case-footer-nav-link:hover::before {
-  transform: translateX(0);
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
 }
 
 .case-footer-nav-link:hover {
-  color: var(--black);
+  opacity: 0.6;
 }
 
-.case-footer-nav-link span {
-  position: relative;
-  z-index: 2;
+.case-nav-arrow {
+  font-family: var(--font-pretendard);
+  font-weight: 500;
 }
 
 /* ─── UV Chart ─── */
@@ -1836,22 +1841,29 @@ a {
 
   .case-footer-nav {
     flex-direction: column;
-    align-items: stretch;
-    min-height: auto;
+    gap: 0;
+    padding: 0 12px;
   }
 
-  .case-footer-nav > .case-section-label {
-    padding: 16px 12px !important;
+  .case-footer-nav-header {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--white);
+    padding: 16px 0;
   }
 
-  .case-footer-nav-links {
-    border-left: none;
-    border-top: 1px solid var(--white);
+  .case-footer-nav-body {
+    height: auto;
+    min-height: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
   }
 
   .case-footer-nav-link {
-    padding: 0 16px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   /* UV Chart responsive */
