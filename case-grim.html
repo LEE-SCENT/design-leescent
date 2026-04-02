@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grim : Figma Plugin — Jihyang (Scent) Lee</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="about-heading">
+        <div class="back-home">
+          <a href="cases.html" class="home-link">
+            <svg class="home-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2.5 8.80423C2.5 8.3256 2.5 8.08628 2.56169 7.86589C2.61633 7.67067 2.70614 7.48705 2.82669 7.32406C2.96278 7.14006 3.15168 6.99314 3.52949 6.69929L9.18141 2.30335C9.47418 2.07564 9.62057 1.96178 9.78221 1.91802C9.92484 1.8794 10.0752 1.8794 10.2178 1.91802C10.3794 1.96178 10.5258 2.07564 10.8186 2.30335L16.4705 6.69929C16.8483 6.99314 17.0372 7.14006 17.1733 7.32406C17.2939 7.48705 17.3837 7.67067 17.4383 7.86589C17.5 8.08628 17.5 8.3256 17.5 8.80423V14.8333C17.5 15.7668 17.5 16.2335 17.3183 16.59C17.1586 16.9036 16.9036 17.1586 16.59 17.3183C16.2335 17.5 15.7668 17.5 14.8333 17.5H5.16667C4.23325 17.5 3.76654 17.5 3.41002 17.3183C3.09641 17.1586 2.84144 16.9036 2.68166 16.59C2.5 16.2335 2.5 15.7668 2.5 14.8333V8.80423Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Cases
+          </a>
+          <h1 class="about-title">Grim : Figma Plugin</h1>
+        </div>
+        <span class="copyright">© 2026</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner">
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Collaborators <span class="case-section-sublabel">협업</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Goals <span class="case-section-sublabel">목표</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Design Process -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design Process <span class="case-section-sublabel">디자인 프로세스</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Results and Achievements -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Results and<br>Achievements <span class="case-section-sublabel">결과 및 성과</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Case Footer Nav -->
+      <div class="case-footer-nav">
+        <p class="case-section-label" style="opacity:0.25;padding:0 20px;flex:1;">Grim : Figma Plugin</p>
+        <div class="case-footer-nav-links">
+          <a href="case-crm.html" class="case-footer-nav-link">← CRM</a>
+          <a href="case-bo-notification.html" class="case-footer-nav-link">BO Notification Center MVP →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    function openLightbox(src) {
+      if (!src) return;
+      var overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay';
+      var img = document.createElement('img');
+      img.src = src;
+      overlay.appendChild(img);
+      function close() { overlay.remove(); document.removeEventListener('keydown', onKey); }
+      function onKey(e) { if (e.key === 'Escape') close(); }
+      overlay.addEventListener('click', close);
+      document.addEventListener('keydown', onKey);
+      document.body.appendChild(overlay);
+    }
+
+    (function () {
+      function fitFooterName() {
+        var el = document.querySelector('.footer-name');
+        if (!el) return;
+        var parent = el.parentElement;
+        var lo = 8, hi = 600;
+        while (hi - lo > 0.5) {
+          var mid = (lo + hi) / 2;
+          el.style.fontSize = mid + 'px';
+          if (el.scrollWidth <= parent.clientWidth) lo = mid;
+          else hi = mid;
+        }
+        el.style.fontSize = lo + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fitFooterName);
+      window.addEventListener('resize', fitFooterName);
+    })();
+  </script>
+</body>
+</html>
