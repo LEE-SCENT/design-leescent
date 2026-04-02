@@ -988,7 +988,8 @@ a {
   background: #8f00ff;
   border-radius: 20px;
   overflow: hidden;
-  height: 480px;
+  aspect-ratio: 748 / 380;
+  height: auto;
 }
 
 .case-hero-inner img {
@@ -1103,7 +1104,7 @@ a {
 
 .case-process-item {
   flex: 1;
-  min-height: 120px;
+  height: 196px;
   display: flex;
   flex-direction: column;
   align-items: center;
