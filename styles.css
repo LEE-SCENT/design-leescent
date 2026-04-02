@@ -199,7 +199,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -249,7 +249,7 @@ a {
 
 .footer-name .name-regular {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -3.92px;
 }
 
@@ -269,7 +269,7 @@ a {
 
 .footer-location {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -287,7 +287,7 @@ a {
   flex: 1;
   padding: 20px;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.35;
   letter-spacing: -0.36px;
@@ -352,7 +352,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: var(--white);
@@ -386,7 +386,7 @@ a {
   gap: 10px;
   cursor: pointer;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.35;
   color: var(--white);
@@ -401,7 +401,7 @@ a {
 
 .about-title {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 72px;
   line-height: 1;
   letter-spacing: -1.44px;
@@ -516,7 +516,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: var(--white);
@@ -546,7 +546,7 @@ a {
 
 .experience-label {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1;
   color: var(--white);
@@ -574,7 +574,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -621,7 +621,7 @@ a {
 
 .exp-list .en {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -629,7 +629,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* ─── About Footer (dimmed) ────────────────────── */
@@ -654,7 +654,7 @@ a {
 
 .cases-description .en {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .cases-section {
@@ -674,7 +674,7 @@ a {
 
 .cases-company {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -683,7 +683,7 @@ a {
 
 .cases-type {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: -0.36px;
@@ -764,7 +764,7 @@ a {
   z-index: 2;
   min-width: 0;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 1;
   color: var(--white);
@@ -776,7 +776,7 @@ a {
   z-index: 2;
   flex-shrink: 0;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: var(--white);
@@ -813,7 +813,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1;
   white-space: nowrap;
@@ -1140,7 +1140,7 @@ a {
 
 .case-process-item-sub {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 11px;
   line-height: 1.4;
   color: var(--white-50);
@@ -1164,7 +1164,7 @@ a {
 
 .case-process-label {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.25;
   color: #8f00ff;
@@ -1198,7 +1198,7 @@ a {
   padding: 10px 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   line-height: 1.4;
   color: var(--white);
@@ -1292,7 +1292,7 @@ a {
 
 .case-grid-desc {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   color: var(--white-50);
 }
