@@ -1092,6 +1092,8 @@ a {
 /* ─── Design Process ─── */
 
 .case-process-body {
+  overflow-x: auto;
+  overflow-y: visible;
   padding-bottom: 40px;
 }
 
@@ -1100,8 +1102,7 @@ a {
   align-items: stretch;
   gap: 0;
   position: relative;
-  overflow-x: auto;
-  overflow-y: visible;
+  min-width: max-content;
 }
 
 .case-process-item {
@@ -1523,21 +1524,22 @@ a {
   background: #cd28fd;
   color: var(--black);
   flex: 9.3;
+  min-width: 80px;
+  padding: 10px 14px 14px;
 }
 
 .uv-bar--tablet {
   background: white;
   color: #15181e;
-  flex: none;
-  width: 4px;
-  padding: 0;
-  overflow: hidden;
+  flex: 0.8;
+  min-width: 72px;
+  padding: 10px 10px 14px;
 }
 
 .uv-bar--desktop {
   background: #00ea06;
   color: #15181e;
-  flex: 1;
+  flex: 89.9;
   align-items: flex-end;
 }
 
@@ -1556,15 +1558,17 @@ a {
 }
 
 .uv-category--mobile {
-  width: 320px;
+  flex: 3.2 1 0;
+  min-width: 0;
 }
 
 .uv-category--tablet {
-  width: 96px;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .uv-category--desktop {
-  flex: 1;
+  flex: 4 1 0;
   min-width: 0;
 }
 
@@ -1836,5 +1840,80 @@ a {
   .case-footer-nav-link {
     padding: 0 16px;
     font-size: 16px;
+  }
+
+  /* UV Chart responsive */
+  .uv-caption {
+    padding: 10px 16px;
+  }
+
+  .uv-top-row {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .uv-device-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .uv-breakdown {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 16px 20px;
+  }
+
+  .uv-category--mobile {
+    flex: 1 0 100%;
+  }
+
+  .uv-category--tablet {
+    flex: 0 0 auto;
+  }
+
+  .uv-category--desktop {
+    flex: 1 0 100%;
+  }
+
+  .uv-cat-items {
+    gap: 8px;
+  }
+
+  .uv-cat-label {
+    font-size: 12px;
+  }
+
+  .uv-val {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .uv-range {
+    font-size: 11px;
+  }
+
+  .uv-total-num {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .uv-caption {
+    padding: 12px 24px;
+  }
+
+  .uv-top-row {
+    padding: 16px 24px;
+  }
+
+  .uv-breakdown {
+    gap: 20px;
+    padding: 0 24px 24px;
+  }
+
+  .uv-cat-items {
+    gap: 14px;
   }
 }
