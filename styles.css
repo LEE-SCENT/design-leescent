@@ -1368,10 +1368,9 @@ a {
 }
 
 .case-footer-nav-header {
-  width: 374px;
-  flex-shrink: 0;
+  flex: 0 0 25%;
   border-right: 1px solid var(--white);
-  padding: 20px 0;
+  padding: 20px 20px 20px 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -1406,11 +1405,6 @@ a {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  transition: opacity 0.2s ease;
-}
-
-.case-footer-nav-link:hover {
-  opacity: 0.6;
 }
 
 .case-nav-arrow {
