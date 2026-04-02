@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clay 2.0 : Layout (Grid & Breakpoints) — Jihyang (Scent) Lee</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="about-heading">
+        <div class="back-home">
+          <a href="cases.html" class="home-link">
+            <svg class="home-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2.5 8.80423C2.5 8.3256 2.5 8.08628 2.56169 7.86589C2.61633 7.67067 2.70614 7.48705 2.82669 7.32406C2.96278 7.14006 3.15168 6.99314 3.52949 6.69929L9.18141 2.30335C9.47418 2.07564 9.62057 1.96178 9.78221 1.91802C9.92484 1.8794 10.0752 1.8794 10.2178 1.91802C10.3794 1.96178 10.5258 2.07564 10.8186 2.30335L16.4705 6.69929C16.8483 6.99314 17.0372 7.14006 17.1733 7.32406C17.2939 7.48705 17.3837 7.67067 17.4383 7.86589C17.5 8.08628 17.5 8.3256 17.5 8.80423V14.8333C17.5 15.7668 17.5 16.2335 17.3183 16.59C17.1586 16.9036 16.9036 17.1586 16.59 17.3183C16.2335 17.5 15.7668 17.5 14.8333 17.5H5.16667C4.23325 17.5 3.76654 17.5 3.41002 17.3183C3.09641 17.1586 2.84144 16.9036 2.68166 16.59C2.5 16.2335 2.5 15.7668 2.5 14.8333V8.80423Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Cases
+          </a>
+          <h1 class="about-title">Clay 2.0 : Layout<br/>(Grid &amp; Breakpoints)</h1>
+        </div>
+        <span class="copyright">© 2026</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner">
+          <img src="https://www.figma.com/api/mcp/asset/9c81c0e3-5e30-4e0c-b6b7-94925e819d8a" alt="Clay 2.0 Layout hero" />
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            기존 제품과 시스템의 모호한 정의로 인해 파편화된 <strong>Breakpoint</strong>와 <strong>Layout</strong>의 문제를 해결합니다. 일반적이거나 글로벌 기준에 맞추지 않고, 실제 사용자의 제품 환경 분석을 통해 사용자 경험을 최적화 합니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Collaborators <span class="case-section-sublabel">협업</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">Front-end engineer(2)</p>
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Goals <span class="case-section-sublabel">목표</span></p>
+        </div>
+        <div class="case-section-body">
+          <ul class="case-body-list">
+            <li>주요 사용 환경에 맞춘 디자인 시스템 최적화</li>
+            <li>데스크탑 화면을 위한 세분화된 <strong>Breakpoint</strong> 구축</li>
+            <li>그리드 시스템과 콘텐츠 레이아웃 표준화</li>
+            <li>디자인 워크스페이스 통합 : 일관된 스크린 사이즈로 효율적인 디자인 작업 환경 조성</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Design Process -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design Process <span class="case-section-sublabel">디자인 프로세스</span></p>
+        </div>
+        <div class="case-section-body case-process-body">
+          <div class="case-process">
+            <div class="case-process-item">
+              <p class="case-process-item-title">데이터 분석</p>
+              <p class="case-process-item-sub">@Mixpanel</p>
+            </div>
+            <div class="case-process-arrow">→</div>
+            <div class="case-process-item">
+              <p class="case-process-item-title">피드백 수집</p>
+            </div>
+            <div class="case-process-arrow">→</div>
+            <div class="case-process-item highlight">
+              <p class="case-process-item-title"><strong>Breakpoint</strong><br>기준 설정</p>
+            </div>
+            <div class="case-process-arrow case-process-arrow--highlight">→</div>
+            <div class="case-process-item highlight">
+              <p class="case-process-item-title"><strong>Layout</strong><br>최적화</p>
+            </div>
+            <div class="case-process-arrow">→</div>
+            <div class="case-process-item">
+              <p class="case-process-item-title">워크스페이스<br>통합</p>
+            </div>
+            <div class="case-process-arrow">→</div>
+            <div class="case-process-item">
+              <p class="case-process-item-title">배포 및 적용</p>
+            </div>
+          </div>
+          <p class="case-process-label">Testing, feedback and iteration</p>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Research <span class="case-section-sublabel">연구</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            <strong>Mixpanel</strong> 데이터 분석 결과를 바탕으로 프로젝트 목표와 단계별 작업 내용을 정의했습니다.<br><br>
+            사용자의 주요 화면 크기를 분석한 결과, 데스크탑 사용 비율이 <strong>89.9%</strong>임을 확인했습니다. 이에 따라 우리는 모바일 기준을 최소화하고, 데스크탑의 세분화된 <strong>Breakpoint</strong>를 만들기로 결정했습니다.
+          </p>
+          <div class="case-content-block">
+            <img src="https://www.figma.com/api/mcp/asset/9eb0a906-7892-44b1-a821-201b7a57e0ab" alt="BO 방문자 수 UV 데이터 — Total 55,434, Mobile 9.3%, Tablet 0.8%, Desktop 89.9%" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Collaborate with Product Designers -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Collaborate with<br>Product Designers <span class="case-section-sublabel">디자이너 협업</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            프로덕트 디자이너들로부터 현재 사용 중인 Breakpoint와 Layout 기준에 대한 피드백을 수집했습니다.
+          </p>
+          <div class="case-content-block">
+            <img src="https://www.figma.com/api/mcp/asset/34a4b254-8d45-408e-84ee-76d0d4f78409" alt="스쿼드별 Breakpoint 현황 — Current by squad" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Criteria Setting -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Criteria Setting <span class="case-section-sublabel">공통 기준 정의</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            일관된 사용자 경험을 위해 총 <strong>6</strong>가지 공통 기준을 정의했습니다. 데스크탑 화면에서는 네가지의 <strong>Breakpoint(1279, 1919, 2703, 2704+)</strong>를 제공합니다.
+          </p>
+          <div class="case-breakpoints-table">
+            <div class="case-bp-header">
+              <span>Breakpoints</span>
+              <span>Value</span>
+              <span>Viewport</span>
+              <span>Columns</span>
+              <span>Margin</span>
+              <span>Gutter</span>
+              <span>Navigation</span>
+            </div>
+            <div class="case-bp-row">
+              <span class="case-bp-name">xsmall <em>Small Phones</em></span>
+              <span>599</span>
+              <span>360–599</span>
+              <span>4</span>
+              <span class="case-bp-token">space-4</span>
+              <span class="case-bp-token">space-4</span>
+              <span>Mobile</span>
+            </div>
+            <div class="case-bp-row">
+              <span class="case-bp-name">small <em>Phones</em></span>
+              <span>959</span>
+              <span>600–959</span>
+              <span>8</span>
+              <span class="case-bp-token">space-6</span>
+              <span class="case-bp-token">space-6</span>
+              <span>Mobile</span>
+            </div>
+            <div class="case-bp-row">
+              <span class="case-bp-name">medium <em>Desktops</em></span>
+              <span>1279</span>
+              <span>960–1279</span>
+              <span>12</span>
+              <span class="case-bp-token">space-10</span>
+              <span class="case-bp-token">space-6</span>
+              <span>Collapsed <em>접힘</em></span>
+            </div>
+            <div class="case-bp-row case-bp-row--highlight">
+              <span class="case-bp-name">large <em>Desktops</em></span>
+              <span>1919</span>
+              <span>1280–1919</span>
+              <span>12</span>
+              <span class="case-bp-token">space-10</span>
+              <span class="case-bp-token">space-6</span>
+              <span>Expanded <em>펼침</em></span>
+            </div>
+            <div class="case-bp-row case-bp-row--highlight">
+              <span class="case-bp-name">xlarge <em>Desktops</em></span>
+              <span>2703</span>
+              <span>1920–2703</span>
+              <span>12</span>
+              <span class="case-bp-token">space-10</span>
+              <span class="case-bp-token">space-6</span>
+              <span>Expanded <em>펼침</em></span>
+            </div>
+            <div class="case-bp-row case-bp-row--highlight">
+              <span class="case-bp-name">2xlarge <em>Desktops</em></span>
+              <span>—</span>
+              <span>2704+</span>
+              <span>12</span>
+              <span class="case-bp-token">space-10</span>
+              <span class="case-bp-token">space-6</span>
+              <span>Expanded <em>펼침</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layout Optimization -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Layout Optimization <span class="case-section-sublabel">레이아웃 최적화</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            최적화된 사용자 경험을 제공하기 위해 <strong>Layout</strong>을 재구성했습니다. 새로운 <strong>Breakpoint</strong> 기준에 맞춘 화면 크기별 그리드 시스템은 일관된 사용자 경험을 보장합니다.<br><br>
+            기본적으로 컨테이너의 전체 너비를 차지하는 가변 그리드(<strong>Fluid</strong>)를 사용합니다. <strong>Fixed, Hybrid</strong>는 <strong>Large</strong> 이상의 <strong>Breakpoint</strong>에서 사용할 수 있습니다.
+          </p>
+          <div class="case-grid-types">
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--fluid">
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+              </div>
+              <p class="case-grid-label">❶ Fluid grid</p>
+              <p class="case-grid-desc">Fluid</p>
+            </div>
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--fixed">
+                <div class="case-grid-margin"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-margin"></div>
+              </div>
+              <p class="case-grid-label">❷ Fixed grid</p>
+              <p class="case-grid-desc">Fixed</p>
+            </div>
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--hybrid">
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col"></div>
+              </div>
+              <p class="case-grid-label">❸ Hybrid grid</p>
+              <p class="case-grid-desc">Fluid + Fixed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing, feedback and iteration -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Testing, feedback<br>and iteration <span class="case-section-sublabel">테스트 및 피드백</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            다양한 화면 크기에서 새로운 레이아웃을 테스트하여 일관된 사용자 경험을 보장하고, 필요한 경우 프로덕트 디자이너와 함께 추가 조정을 진행 했습니다.
+          </p>
+          <div class="case-content-block">
+            <img src="https://www.figma.com/api/mcp/asset/d46a6bbd-8fde-4580-bb06-a467acb5266a" alt="화면 크기별 레이아웃 테스트" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Workspace integration -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Workspace integration <span class="case-section-sublabel">작업환경 표준화</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            360, 1024, 1440, 1920을 기본 스크린 사이즈로 설정하고, 필요에 따라 600과 3200 사이즈를 추가할 수 있도록 유연성을 부여했습니다.
+          </p>
+          <div class="case-workspace-sizes">
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--xsmall">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">360</p>
+              <p class="case-ws-optional">600 (Optional)</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--small">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1024</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--medium">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1440</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--large">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1920</p>
+              <p class="case-ws-optional">3200 (Optional)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results and Achievements -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Results and<br>Achievements <span class="case-section-sublabel">결과 및 성과</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">
+            이 프로젝트는 실제 사용자 데이터를 기반으로 기준을 통합하고 최적화하여 사용자 경험을 개선하고 작업자의 효율을 크게 높이는데 기여했습니다.
+          </p>
+          <p class="case-body-text">
+            필요에 따라 화면 크기를 추가할 수 있어 유연한 디자인 시스템을 제공할 수 있도록 했고, 디자이너들과 정기적인 피드백을 통해 <strong>Clay</strong>만의 <strong>Breakpoint</strong>와 그리드 시스템의 구축할 수 있었습니다. 또한 다양한 화면 크기에서도 일관된 사용자 경험을 제공할 수 있는 레이아웃을 최적화했습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- Case Footer Nav -->
+      <div class="case-footer-nav">
+        <p class="case-section-label" style="opacity:0.25;padding:0 20px;flex:1;">Clay 2.0 : Layout</p>
+        <div class="case-footer-nav-links">
+          <a href="#" class="case-footer-nav-link">← Clay 2.0 : Typography Redefined</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    (function () {
+      function fitFooterName() {
+        var el = document.querySelector('.footer-name');
+        if (!el) return;
+        var parent = el.parentElement;
+        var lo = 8, hi = 600;
+        while (hi - lo > 0.5) {
+          var mid = (lo + hi) / 2;
+          el.style.fontSize = mid + 'px';
+          if (el.scrollWidth <= parent.clientWidth) lo = mid;
+          else hi = mid;
+        }
+        el.style.fontSize = lo + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fitFooterName);
+      window.addEventListener('resize', fitFooterName);
+    })();
+  </script>
+</body>
+</html>
