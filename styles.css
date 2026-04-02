@@ -1709,6 +1709,77 @@ a {
   letter-spacing: 0.02em;
 }
 
+/* ─── Breakpoint Diagram (node 9:5904) ─── */
+.bp-chart-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+.bp-chart {
+  position: relative;
+  min-width: 700px;
+  height: 170px;
+  background: black;
+  border-radius: 12px;
+}
+.bp-val {
+  position: absolute;
+  top: 16px;
+  font-family: var(--font-pretendard);
+  font-size: 10px;
+  font-weight: 700;
+  color: #8f00ff;
+  line-height: 1.6;
+  transform: translateX(-100%);
+  white-space: nowrap;
+}
+.bp-arr {
+  position: absolute;
+  top: 37px;
+  height: 6px;
+  object-fit: fill;
+  display: block;
+}
+.bp-dev {
+  position: absolute;
+  top: 52px;
+  height: 100px;
+  transform: translateX(-50%);
+  border: 1.5px solid white;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+.bp-nav-h {
+  background: rgba(255, 255, 255, 0.2);
+  height: 4.5px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.bp-nav-v {
+  background: rgba(255, 255, 255, 0.2);
+  width: 20.08px;
+  height: 100%;
+  flex-shrink: 0;
+}
+.bp-content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(143, 0, 255, 0.2);
+  border-left: 1px solid #8f00ff;
+  border-right: 1px solid #8f00ff;
+}
+.bp-content span {
+  font-family: var(--font-pretendard);
+  font-size: 8px;
+  font-weight: 700;
+  color: #8f00ff;
+  white-space: nowrap;
+}
+
 /* ─── Case Study Responsive ─── */
 
 @media (max-width: 900px) {
