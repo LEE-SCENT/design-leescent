@@ -1385,6 +1385,8 @@ a {
   line-height: 1;
   color: var(--white-50);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .case-footer-nav-body {
