@@ -77,6 +77,19 @@
   </div>
   <script>
     (function () {
+      fetch('cases.html')
+        .then(function (res) { return res.text(); })
+        .then(function (html) {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          var count = doc.querySelectorAll('a.cases-item').length;
+          var badge = document.querySelector('.menu-item-badge');
+          if (badge && count > 0) badge.textContent = count;
+        })
+        .catch(function () {});
+    })();
+
+    (function () {
       function fitFooterName() {
         var el = document.querySelector('.footer-name');
         if (!el) return;
