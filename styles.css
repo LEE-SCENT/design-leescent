@@ -1395,7 +1395,12 @@ a {
   height: 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 40px;
+}
+
+.case-footer-nav-body > * {
+  flex: 1;
+  min-width: 0;
 }
 
 .case-footer-nav-link {
@@ -1404,15 +1409,26 @@ a {
   font-size: 24px;
   line-height: 1;
   color: var(--white);
-  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 2px;
 }
 
+.case-footer-nav-next {
+  justify-content: flex-end;
+}
+
+.case-nav-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
 .case-nav-arrow {
   font-family: var(--font-pretendard);
   font-weight: 500;
+  flex-shrink: 0;
 }
 
 /* ─── UV Chart ─── */
@@ -1859,8 +1875,17 @@ a {
     padding: 16px 0;
   }
 
+  .case-footer-nav-body > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
   .case-footer-nav-link {
     font-size: 18px;
+  }
+
+  .case-footer-nav-next {
+    justify-content: flex-start;
   }
 
   /* UV Chart responsive */
