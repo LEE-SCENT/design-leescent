@@ -1383,7 +1383,7 @@ a {
   font-family: var(--font-helvetica);
   font-weight: 500;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.3;
   color: var(--white-50);
   white-space: nowrap;
   overflow: hidden;
