@@ -1027,7 +1027,7 @@ a {
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
-  color: var(--white-50);
+  color: var(--white);
   display: inline;
   vertical-align: super;
   margin-left: 0;
