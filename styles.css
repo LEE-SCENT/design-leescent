@@ -19,7 +19,7 @@
   --container-width: 1536px;
   --font-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-pretendard: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-garamond: 'Apple Garamond', Georgia, serif;
+  --font-garamond: 'Apple Garamond Light', 'Apple Garamond', Georgia, serif;
   --font-sans: var(--font-helvetica);
 }
 
@@ -213,7 +213,7 @@ a {
 }
 
 .footer-name .name-italic {
-  font-family: 'Apple Garamond', Georgia, serif;
+  font-family: 'Apple Garamond Light', 'Apple Garamond', Georgia, serif;
   font-style: italic;
   font-weight: 200;
 }
