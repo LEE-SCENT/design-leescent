@@ -1097,12 +1097,18 @@ a {
   padding-bottom: 40px;
 }
 
+.case-process-inner {
+  min-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .case-process {
   display: flex;
   align-items: stretch;
   gap: 0;
   position: relative;
-  min-width: max-content;
 }
 
 .case-process-item {
@@ -1439,7 +1445,7 @@ a {
 
 .uv-caption-title {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   color: var(--white);
   line-height: 1.25;
@@ -1447,7 +1453,7 @@ a {
 
 .uv-caption-date {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 10px;
   color: var(--white);
   line-height: 1.4;
@@ -1472,7 +1478,7 @@ a {
 
 .uv-label {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   color: var(--white);
   line-height: 24px;
@@ -1481,7 +1487,7 @@ a {
 
 .uv-total-num {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
   color: var(--white);
   margin: 0;
@@ -1507,7 +1513,7 @@ a {
   gap: 4px;
   padding: 10px 16px 14px;
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .uv-bar-label {
@@ -1574,7 +1580,7 @@ a {
 
 .uv-cat-label {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   color: var(--white);
   margin: 0;
@@ -1597,7 +1603,7 @@ a {
 
 .uv-range {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 16px;
@@ -1606,7 +1612,7 @@ a {
 
 .uv-val {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   white-space: nowrap;
@@ -1790,11 +1796,7 @@ a {
   }
 
   .case-process-item {
-    flex: 0 0 120px;
-  }
-
-  .case-process-arrow {
-    display: none;
+    flex: 0 0 140px;
   }
 
   .case-grid-types {
