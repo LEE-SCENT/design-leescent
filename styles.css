@@ -1,5 +1,45 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
+@font-face {
+  font-family: 'Apple Garamond Light';
+  src: url('fonts/AppleGaramond-LightItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple Garamond';
+  src: url('fonts/AppleGaramond.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple Garamond';
+  src: url('fonts/AppleGaramond-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeue.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeue-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
