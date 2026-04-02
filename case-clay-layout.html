@@ -116,9 +116,11 @@
           </p>
           <div class="uv-chart">
             <div class="uv-caption">
-              <img class="uv-caption-icon" src="https://www.figma.com/api/mcp/asset/5628d47c-4750-421c-9d1f-dcdbfdcbd0b7" alt="">
-              <span class="uv-caption-title">BO 방문자 수 (UV)</span>
-              <span class="uv-caption-date">2024.05 기준</span>
+              <img class="uv-caption-icon" src="https://www.figma.com/api/mcp/asset/6b2233d0-1707-4206-9892-797e3166b231" alt="">
+              <div class="uv-caption-title-group">
+                <span class="uv-caption-title">BO 방문자 수 (UV)</span>
+                <span class="uv-caption-date">2024.05 기준</span>
+              </div>
             </div>
             <div class="uv-body">
               <div class="uv-top-row">
@@ -127,36 +129,167 @@
                   <p class="uv-total-num">55,434</p>
                 </div>
                 <div class="uv-device-bar">
-                  <div class="uv-bar uv-bar--mobile"><span>Mobile</span><span>9.3%</span></div>
-                  <div class="uv-bar uv-bar--tablet"><span>Tablet</span><span>0.8%</span></div>
-                  <div class="uv-bar uv-bar--desktop"><span>Desktop</span><span>89.9%</span></div>
+                  <div class="uv-bar uv-bar--mobile">
+                    <span class="uv-bar-label">Mobile</span>
+                    <span class="uv-bar-pct">9.3%</span>
+                  </div>
+                  <div class="uv-bar uv-bar--tablet">
+                    <span class="uv-bar-label">Tablet</span>
+                    <span class="uv-bar-pct">0.8%</span>
+                  </div>
+                  <div class="uv-bar uv-bar--desktop">
+                    <span class="uv-bar-label">Desktop</span>
+                    <span class="uv-bar-pct">89.9%</span>
+                  </div>
                 </div>
               </div>
               <div class="uv-breakdown">
-                <div class="uv-category">
+                <div class="uv-category uv-category--mobile">
                   <p class="uv-cat-label">Mobile</p>
                   <div class="uv-cat-items">
-                    <div class="uv-cat-item"><span class="uv-range">320-479px</span><span class="uv-val uv-val--mobile">4,718</span></div>
-                    <div class="uv-cat-item"><span class="uv-range">480-767px</span><span class="uv-val uv-val--dim">46</span></div>
-                    <div class="uv-cat-item"><span class="uv-range">768-991px</span><span class="uv-val uv-val--dim">400</span></div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">320-479px</span>
+                      <span class="uv-val uv-val--mobile">4,718</span>
+                    </div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">480-767px</span>
+                      <span class="uv-val uv-val--dim">46</span>
+                    </div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">768-991px</span>
+                      <span class="uv-val uv-val--dim">400</span>
+                    </div>
                   </div>
                 </div>
-                <div class="uv-category">
+                <div class="uv-category uv-category--tablet">
                   <p class="uv-cat-label">Tablet</p>
                   <div class="uv-cat-items">
-                    <div class="uv-cat-item"><span class="uv-range">992-1279px</span><span class="uv-val uv-val--dim">468</span></div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">992-1279px</span>
+                      <span class="uv-val uv-val--dim">468</span>
+                    </div>
                   </div>
                 </div>
                 <div class="uv-category uv-category--desktop">
                   <p class="uv-cat-label">Desktop</p>
                   <div class="uv-cat-items">
-                    <div class="uv-cat-item"><span class="uv-range">1280-1439px</span><span class="uv-val uv-val--dim">2,173</span></div>
-                    <div class="uv-cat-item"><span class="uv-range">1440-1919px</span><span class="uv-val uv-val--desktop">7,328</span></div>
-                    <div class="uv-cat-item"><span class="uv-range">1920px</span><span class="uv-val uv-val--desktop">29,050</span></div>
-                    <div class="uv-cat-item"><span class="uv-range">2560px</span><span class="uv-val uv-val--desktop">11,251</span></div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">1280-1439px</span>
+                      <span class="uv-val uv-val--dim">2,173</span>
+                    </div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">1440-1919px</span>
+                      <span class="uv-val uv-val--desktop">7,328</span>
+                    </div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">1920px</span>
+                      <span class="uv-val uv-val--desktop">29,050</span>
+                    </div>
+                    <div class="uv-cat-item">
+                      <span class="uv-range">2560px</span>
+                      <span class="uv-val uv-val--desktop">11,251</span>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Research Screenshot Grid -->
+          <div class="rs-outer">
+            <div class="rs-inner">
+              <!-- Group labels -->
+              <div class="rs-row">
+                <div class="rs-label rs-label--mobile">Mobile</div>
+                <div class="rs-label rs-label--tablet">Tablet</div>
+                <div class="rs-label rs-label--desktop">Desktop</div>
+              </div>
+              <!-- Row 1 -->
+              <div class="rs-row">
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/c5a4becc-3a77-48ce-9105-1d1cc06acab9" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Small Mobile (320-479px)</div><ul><li>iPhone SE (1세대) <em>640x1136</em></li><li>Google Pixel 4a <em>1080x2340</em></li><li>Samsung Galaxy A01 <em>720x1520</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/45035324-9d6b-4349-ae0c-e0d9b954138a" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Medium Mobile (480-767px)</div><ul><li>iPhone 11 <em>828x1792</em></li><li>iPhone 12/13 <em>1170x2532</em></li><li>Samsung Galaxy S21 <em>1080x2400</em></li><li>Google Pixel 5 <em>1080x2340</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/e5933f80-e514-46fe-aef5-b536d7d89d05" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Large Mobile (768-991px)</div><ul><li>iPhone 12, 13 Pro Max <em>1284x2778</em></li><li>Samsung Galaxy S21 Ultra <em>1440x3200</em></li><li>OnePlus 9 Pro <em>1440x3216</em></li><li>Samsung Note 20 Ultra <em>1440x3088</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/fe3eba7a-4e4d-4f18-9b3b-b3af1dcdcce6" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Tablet (992-1279px)</div><ul><li>iPad (7세대 이후 모델)</li><li>Samsung Galaxy Tab S7</li><li>Microsoft Surface Go</li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/fa271236-07fb-46fb-8f2f-e02daa7a6f9e" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Small Desktop (1280-1439px)</div><ul><li>작은 모니터가 연결된 데스크탑</li><li>일부 작은 노트북 (13인치 크기)</li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--green">
+                  <img src="https://www.figma.com/api/mcp/asset/8a305995-47d7-42de-b397-9732d626e146" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Large Desktop (+1920px)</div><ul><li>고해상도 모니터 (Full HD, 4K 등)</li><li>iMac, 대형 화면 노트북</li></ul></div>
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div class="rs-row">
+                <div class="rs-screen rs-screen--purple">
+                  <img src="https://www.figma.com/api/mcp/asset/a73f1213-09bf-4634-aee6-a4415a31f13d" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Small Mobile (320-479px)</div><ul><li>iPhone SE (1세대) <em>640x1136</em></li><li>Google Pixel 4a <em>1080x2340</em></li><li>Samsung Galaxy A01 <em>720x1520</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/c8749df3-f273-4cbb-8386-d2666c4a09e4" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Medium Mobile (480-767px)</div><ul><li>iPhone 11 <em>828x1792</em></li><li>iPhone 12/13 <em>1170x2532</em></li><li>Samsung Galaxy S21 <em>1080x2400</em></li><li>Google Pixel 5 <em>1080x2340</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/b419ee5c-5229-499c-8007-b1d6bf565007" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Large Mobile (768-991px)</div><ul><li>iPhone 12, 13 Pro Max <em>1284x2778</em></li><li>Samsung Galaxy S21 Ultra <em>1440x3200</em></li><li>OnePlus 9 Pro <em>1440x3216</em></li><li>Samsung Note 20 Ultra <em>1440x3088</em></li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/17bd7f9f-9292-442b-959e-2eaef273a003" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Tablet (992-1279px)</div><ul><li>iPad (7세대 이후 모델)</li><li>Samsung Galaxy Tab S7</li><li>Microsoft Surface Go</li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--green">
+                  <img src="https://www.figma.com/api/mcp/asset/a71adab4-0eae-4122-85d5-1829de62b6e9" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Medium Desktop (1440-1919px)</div><ul><li>일반적인 모니터가 연결된 데스크탑</li><li>대부분의 노트북 (15~17인치)</li></ul></div>
+                </div>
+                <div class="rs-screen rs-screen--green">
+                  <img src="https://www.figma.com/api/mcp/asset/b94ce554-fffd-4de9-8179-483bcfd672d7" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Large Screen (+2560px)</div><ul><li>Ultra HD (4K) 모니터</li><li>5K 모니터 (iMac Retina 5K)</li><li>대형 TV 화면</li></ul></div>
+                </div>
+              </div>
+              <!-- Row 3 (col1 + col5 only) -->
+              <div class="rs-row">
+                <div class="rs-screen rs-screen--purple">
+                  <img src="https://www.figma.com/api/mcp/asset/0bb5e1ad-41dc-4a06-8003-1c87430aa75b" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Small Mobile (320-479px)</div><ul><li>iPhone SE (1세대) <em>640x1136</em></li><li>Google Pixel 4a <em>1080x2340</em></li><li>Samsung Galaxy A01 <em>720x1520</em></li></ul></div>
+                </div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/05028e91-7cb4-4220-b77b-5dafd0ece61a" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Medium Desktop (1440-1919px)</div><ul><li>일반적인 모니터가 연결된 데스크탑</li><li>대부분의 노트북 (15~17인치)</li></ul></div>
+                </div>
+                <div class="rs-screen-empty"></div>
+              </div>
+              <!-- Row 4 (col5 only) -->
+              <div class="rs-row">
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen-empty"></div>
+                <div class="rs-screen rs-screen--dim">
+                  <img src="https://www.figma.com/api/mcp/asset/71380795-b920-4f5c-ac51-8d72df9a70f2" alt="">
+                  <div class="rs-device-tag"><div class="rs-device-title">Medium Desktop (1440-1919px)</div><ul><li>일반적인 모니터가 연결된 데스크탑</li><li>대부분의 노트북 (15~17인치)</li></ul></div>
+                </div>
+                <div class="rs-screen-empty"></div>
+              </div>
+            </div>
+            <!-- Zoom button -->
+            <div class="rs-zoom-btn">
+              <img src="https://www.figma.com/api/mcp/asset/d275fe07-0a14-47d2-8e60-474db59a1c14" alt="">
+              확대보기
             </div>
           </div>
         </div>
