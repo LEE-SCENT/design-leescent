@@ -394,9 +394,10 @@ a {
 }
 
 .home-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+  font-family: var(--font-pretendard);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .about-title {
