@@ -114,8 +114,50 @@
             <strong>Mixpanel</strong> 데이터 분석 결과를 바탕으로 프로젝트 목표와 단계별 작업 내용을 정의했습니다.<br><br>
             사용자의 주요 화면 크기를 분석한 결과, 데스크탑 사용 비율이 <strong>89.9%</strong>임을 확인했습니다. 이에 따라 우리는 모바일 기준을 최소화하고, 데스크탑의 세분화된 <strong>Breakpoint</strong>를 만들기로 결정했습니다.
           </p>
-          <div class="case-content-block">
-            <img src="https://www.figma.com/api/mcp/asset/9eb0a906-7892-44b1-a821-201b7a57e0ab" alt="BO 방문자 수 UV 데이터 — Total 55,434, Mobile 9.3%, Tablet 0.8%, Desktop 89.9%" />
+          <div class="uv-chart">
+            <div class="uv-caption">
+              <img class="uv-caption-icon" src="https://www.figma.com/api/mcp/asset/5628d47c-4750-421c-9d1f-dcdbfdcbd0b7" alt="">
+              <span class="uv-caption-title">BO 방문자 수 (UV)</span>
+              <span class="uv-caption-date">2024.05 기준</span>
+            </div>
+            <div class="uv-body">
+              <div class="uv-top-row">
+                <div class="uv-total">
+                  <p class="uv-label">Total</p>
+                  <p class="uv-total-num">55,434</p>
+                </div>
+                <div class="uv-device-bar">
+                  <div class="uv-bar uv-bar--mobile"><span>Mobile</span><span>9.3%</span></div>
+                  <div class="uv-bar uv-bar--tablet"><span>Tablet</span><span>0.8%</span></div>
+                  <div class="uv-bar uv-bar--desktop"><span>Desktop</span><span>89.9%</span></div>
+                </div>
+              </div>
+              <div class="uv-breakdown">
+                <div class="uv-category">
+                  <p class="uv-cat-label">Mobile</p>
+                  <div class="uv-cat-items">
+                    <div class="uv-cat-item"><span class="uv-range">320-479px</span><span class="uv-val uv-val--mobile">4,718</span></div>
+                    <div class="uv-cat-item"><span class="uv-range">480-767px</span><span class="uv-val uv-val--dim">46</span></div>
+                    <div class="uv-cat-item"><span class="uv-range">768-991px</span><span class="uv-val uv-val--dim">400</span></div>
+                  </div>
+                </div>
+                <div class="uv-category">
+                  <p class="uv-cat-label">Tablet</p>
+                  <div class="uv-cat-items">
+                    <div class="uv-cat-item"><span class="uv-range">992-1279px</span><span class="uv-val uv-val--dim">468</span></div>
+                  </div>
+                </div>
+                <div class="uv-category uv-category--desktop">
+                  <p class="uv-cat-label">Desktop</p>
+                  <div class="uv-cat-items">
+                    <div class="uv-cat-item"><span class="uv-range">1280-1439px</span><span class="uv-val uv-val--dim">2,173</span></div>
+                    <div class="uv-cat-item"><span class="uv-range">1440-1919px</span><span class="uv-val uv-val--desktop">7,328</span></div>
+                    <div class="uv-cat-item"><span class="uv-range">1920px</span><span class="uv-val uv-val--desktop">29,050</span></div>
+                    <div class="uv-cat-item"><span class="uv-range">2560px</span><span class="uv-val uv-val--desktop">11,251</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
