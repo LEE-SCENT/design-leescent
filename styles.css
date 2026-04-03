@@ -1187,6 +1187,9 @@ a {
 
 .case-process-arrow--highlight {
   color: rgba(143, 0, 255, 0.4);
+  flex-direction: column;
+  gap: 0;
+  line-height: 1;
 }
 
 .case-process-label {
