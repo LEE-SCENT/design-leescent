@@ -1787,8 +1787,9 @@ a {
 
 .bp-table-bp {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
   font-weight: 600;
   color: var(--white);
 }
@@ -1822,8 +1823,9 @@ a {
 
 .bp-table-nav {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
   font-weight: 400;
   color: var(--white-50);
 }
