@@ -1098,6 +1098,7 @@ a {
   border-radius: 20px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
 .case-content-block img {
@@ -1833,12 +1834,16 @@ a {
 }
 
 .case-squad-title {
+  position: absolute;
+  top: 0;
+  left: 0;
   font-family: var(--font-pretendard);
   font-weight: 600;
   font-size: 24px;
   color: var(--white);
   padding: 40px;
   margin: 0;
+  z-index: 1;
 }
 
 /* ─── Breakpoint Diagram (node 9:5904) ─── */
