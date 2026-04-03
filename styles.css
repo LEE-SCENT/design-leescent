@@ -1259,15 +1259,11 @@ a {
 
 .case-grid-row {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
 }
 
 .case-grid-card {
   flex: 1 1 220px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1276,7 +1272,7 @@ a {
 
 .case-grid-card-title {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   color: var(--white);
