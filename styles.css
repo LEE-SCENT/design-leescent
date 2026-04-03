@@ -1088,6 +1088,7 @@ a {
   gap: 2px;
   border-radius: 20px;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .case-image-table-group .case-content-block {
