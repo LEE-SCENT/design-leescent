@@ -1816,10 +1816,10 @@ a {
   padding: 12px 20px;
   gap: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-family: var(--font-helvetica);
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 1;
+  font-family: var(--font-pretendard);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
   color: var(--white-50);
 }
 
@@ -1842,29 +1842,31 @@ a {
   gap: 4px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(113, 118, 128, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
+  border-radius: 8px;
+  padding: 6px 8px;
   font-family: var(--font-pretendard);
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.25;
   color: var(--white);
   white-space: nowrap;
+  width: fit-content;
+  align-self: center;
 }
 
 .case-typeface-value {
   font-family: var(--font-helvetica);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--white-50);
 }
 
 .case-typeface-usage {
   font-family: var(--font-pretendard);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--white-50);
   display: flex;
   flex-direction: column;
@@ -1872,7 +1874,7 @@ a {
 }
 
 .case-typeface-note {
-  font-size: 11px;
+  font-size: 12px;
   color: #9747ff;
 }
 
