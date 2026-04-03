@@ -1827,6 +1827,7 @@ a {
 .bp-table-nav-sub {
   font-size: 9px;
   color: var(--white-50);
+  white-space: nowrap;
 }
 
 .case-squad-title {
