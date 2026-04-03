@@ -1750,6 +1750,15 @@ a {
   letter-spacing: 0.02em;
 }
 
+.case-squad-title {
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  padding: 40px;
+  margin: 0;
+}
+
 /* ─── Breakpoint Diagram (node 9:5904) ─── */
 .bp-chart-wrap {
   overflow-x: auto;
