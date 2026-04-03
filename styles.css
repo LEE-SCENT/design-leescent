@@ -1557,9 +1557,21 @@ a {
   background: white;
   color: #15181e;
   flex: 0.8;
-  min-width: 72px;
-  padding: 10px 10px 14px;
+  min-width: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
+
+.uv-bar--tablet .uv-bar-label,
+.uv-bar--tablet .uv-bar-pct {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+}
+
+.uv-bar--tablet .uv-bar-label { top: 10px; }
+.uv-bar--tablet .uv-bar-pct  { top: 30px; }
 
 .uv-bar--desktop {
   background: #00ea06;
