@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clay 2.0 : Layout (Grid & Breakpoints) — Jihyang (Scent) Lee</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .case-process-item.highlight           { background: rgba(143, 0, 255, 0.1); }
+    .case-process-item.highlight .case-process-item-title { color: #8f00ff; }
+    .case-process-arrow--highlight         { color: rgba(143, 0, 255, 0.4); }
+    .case-process-label                    { color: #8f00ff; }
+  </style>
 </head>
 <body>
   <div class="page-wrapper">
@@ -86,7 +92,7 @@
               <div class="case-process-item highlight">
                 <p class="case-process-item-title"><strong>Breakpoint</strong><br>기준 설정</p>
               </div>
-              <div class="case-process-arrow case-process-arrow--highlight">→</div>
+              <div class="case-process-arrow case-process-arrow--highlight"><span>→</span><span>←</span></div>
               <div class="case-process-item highlight">
                 <p class="case-process-item-title"><strong>Layout</strong><br>최적화</p>
               </div>
@@ -116,7 +122,6 @@
           </p>
           <div class="uv-chart">
             <div class="uv-caption">
-              <img class="uv-caption-icon" src="https://www.figma.com/api/mcp/asset/6b2233d0-1707-4206-9892-797e3166b231" alt="">
               <div class="uv-caption-title-group">
                 <span class="uv-caption-title">BO 방문자 수 (UV)</span>
                 <span class="uv-caption-date">2024.05 기준</span>
@@ -195,9 +200,9 @@
             </div>
           </div>
 
-          <!-- Research Screenshot Grid — node 9:5762 -->
+          <!-- Research Screenshot Grid -->
           <div class="case-img-zoom-wrap">
-            <img src="https://www.figma.com/api/mcp/asset/76b667ad-d1af-4b95-8dcb-0365c94512b6" alt="BO 화면별 Breakpoint 현황 — Mobile, Tablet, Desktop">
+            <img src="images/clay-layout-research.png" alt="BO 화면별 Breakpoint 현황 — Mobile, Tablet, Desktop">
             <button class="case-zoom-btn" onclick="openLightbox(this.parentElement.querySelector('img').src)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
               확대보기
@@ -218,7 +223,7 @@
           <div class="case-content-block">
             <p class="case-content-label">Current by squad</p>
             <div class="case-img-zoom-wrap">
-              <img src="https://www.figma.com/api/mcp/asset/34a4b254-8d45-408e-84ee-76d0d4f78409" alt="스쿼드별 Breakpoint 현황">
+              <img src="images/clay-layout-collaborate-01.png" alt="스쿼드별 Breakpoint 현황">
               <button class="case-zoom-btn" onclick="openLightbox(this.parentElement.querySelector('img').src)">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
                 확대보기
@@ -237,54 +242,8 @@
           <p class="case-body-text">
             일관된 사용자 경험을 위해 총 <strong>6</strong>가지 공통 기준을 정의했습니다. 데스크탑 화면에서는 네가지의 <strong>Breakpoint(1279, 1919, 2703, 2704+)</strong>를 제공합니다.
           </p>
-          <!-- Breakpoints diagram — node 9:5904 -->
-          <div class="bp-chart-wrap">
-            <div class="bp-chart">
-              <!-- Breakpoint labels (right-aligned at each boundary) -->
-              <span class="bp-val" style="left:95.26px">599</span>
-              <span class="bp-val" style="left:184.82px">959</span>
-              <span class="bp-val" style="left:302.21px">1279</span>
-              <span class="bp-val" style="left:calc(25% + 202.59px)">1919</span>
-              <span class="bp-val" style="left:calc(75% - 99.33px)">2703</span>
-              <!-- Double-headed range arrows -->
-              <img class="bp-arr" style="left:40px;width:53.697px" src="https://www.figma.com/api/mcp/asset/08e0ff1a-5260-43b5-a4c1-170dba23d1c0" alt="">
-              <img class="bp-arr" style="left:97.28px;width:85.969px" src="https://www.figma.com/api/mcp/asset/6d8aa4ec-4a3d-46e6-9546-1d4a3b424d8c" alt="">
-              <img class="bp-arr" style="left:186.84px;width:114.655px" src="https://www.figma.com/api/mcp/asset/15288329-c1ca-4ef3-a3a3-faac5f0b6080" alt="">
-              <img class="bp-arr" style="left:calc(25% + 30.58px);width:172.027px" src="https://www.figma.com/api/mcp/asset/e8efa0ad-f0a3-4334-aa4b-bf9a640aeb04" alt="">
-              <img class="bp-arr" style="left:calc(50% - 68.31px);width:242.308px" src="https://www.figma.com/api/mcp/asset/c5f84c2b-9767-4746-8b1a-b14240298bd1" alt="">
-              <img class="bp-arr" style="left:calc(75% - 96.92px);width:331.415px" src="https://www.figma.com/api/mcp/asset/c879df64-0db0-48e7-baa3-2881beab0fde" alt="">
-              <!-- Device mockups -->
-              <!-- Xsmall — portrait phone (top nav bar) -->
-              <div class="bp-dev" style="left:56.14px;width:32.272px;flex-direction:column">
-                <div class="bp-nav-h"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-              <!-- Small — portrait phone (top nav bar) -->
-              <div class="bp-dev" style="left:124.18px;width:53.787px;flex-direction:column">
-                <div class="bp-nav-h"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-              <!-- Medium — landscape with thin left nav -->
-              <div class="bp-dev" style="left:238.47px;width:91.796px;flex-direction:row">
-                <div class="bp-nav-v" style="width:5.379px"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-              <!-- Large — landscape with left sidebar -->
-              <div class="bp-dev" style="left:calc(25% + 109.47px);width:129.088px;flex-direction:row">
-                <div class="bp-nav-v"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-              <!-- Xlarge — landscape with left sidebar -->
-              <div class="bp-dev" style="left:calc(50% + 17.75px);width:172.117px;flex-direction:row">
-                <div class="bp-nav-v"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-              <!-- 2xlarge — landscape with left sidebar -->
-              <div class="bp-dev" style="left:calc(100% - 183.43px);width:286.861px;flex-direction:row">
-                <div class="bp-nav-v"></div>
-                <div class="bp-content"><span>Content</span></div>
-              </div>
-            </div>
+          <div class="case-content-block">
+            <img src="images/clay-layout-criteria-setting.png" alt="Breakpoint 기준 정의">
           </div>
         </div>
       </div>
@@ -347,7 +306,7 @@
             다양한 화면 크기에서 새로운 레이아웃을 테스트하여 일관된 사용자 경험을 보장하고, 필요한 경우 프로덕트 디자이너와 함께 추가 조정을 진행 했습니다.
           </p>
           <div class="case-content-block">
-            <img src="https://www.figma.com/api/mcp/asset/d46a6bbd-8fde-4580-bb06-a467acb5266a" alt="화면 크기별 레이아웃 테스트" />
+            <img src="images/clay-layout-testing.png" alt="화면 크기별 레이아웃 테스트" />
           </div>
         </div>
       </div>
