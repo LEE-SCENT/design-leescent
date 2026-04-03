@@ -1278,54 +1278,34 @@ a {
 
 .case-grid-types {
   display: flex;
-  gap: 16px;
+  gap: 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .case-grid-type {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  position: relative;
 }
 
-.case-grid-type-visual {
-  height: 120px;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.case-grid-col {
-  flex: 1;
-  background: rgba(143, 0, 255, 0.5);
-  margin: 4px 2px;
-  border-radius: 2px;
-}
-
-.case-grid-col--fixed {
-  background: rgba(0, 180, 255, 0.6);
-}
-
-.case-grid-margin {
-  width: 20px;
-  flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.05);
+.case-grid-type img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .case-grid-label {
-  font-family: var(--font-helvetica);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-pretendard);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
   color: var(--white);
-}
-
-.case-grid-desc {
-  font-family: var(--font-helvetica);
-  font-weight: 500;
-  font-size: 12px;
-  color: var(--white-50);
+  white-space: nowrap;
+  z-index: 1;
 }
 
 /* ─── Workspace Sizes ─── */
@@ -2038,7 +2018,6 @@ a {
 
   .case-grid-types {
     flex-direction: column;
-    gap: 12px;
   }
 
   .case-workspace-sizes {
