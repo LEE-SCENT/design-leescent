@@ -35,14 +35,9 @@
           <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
         </div>
         <div class="case-section-body">
-          <div>
-            <p class="case-body-text" style="margin:0">
-              기존 제품과 시스템의 모호한 정의로 인해 파편화된 <strong>Breakpoint</strong>와 <strong>Layout</strong>의 문제를 해결합니다.
-            </p>
-            <p class="case-body-text" style="margin:0">
-              일반적이거나 글로벌 기준에 맞추지 않고, 실제 사용자의 제품 환경 분석을 통해 사용자 경험을 최적화 합니다.
-            </p>
-          </div>
+          <p class="case-body-text">
+            기존 제품과 시스템의 모호한 정의로 인해 파편화된 <strong>Breakpoint</strong>와 <strong>Layout</strong>의 문제를 해결합니다. 일반적이거나 글로벌 기준에 맞추지 않고, 실제 사용자의 제품 환경 분석을 통해 사용자 경험을 최적화 합니다.
+          </p>
         </div>
       </div>
 
@@ -81,7 +76,7 @@
             <div class="case-process">
               <div class="case-process-item">
                 <p class="case-process-item-title">데이터 분석</p>
-                <span class="case-process-item-sub">@Mixpanel</span>
+                <p class="case-process-item-sub">@Mixpanel</p>
               </div>
               <div class="case-process-arrow">→</div>
               <div class="case-process-item">
@@ -91,7 +86,7 @@
               <div class="case-process-item highlight">
                 <p class="case-process-item-title"><strong>Breakpoint</strong><br>기준 설정</p>
               </div>
-              <div class="case-process-arrow case-process-arrow--highlight"><span>→</span><span>←</span></div>
+              <div class="case-process-arrow case-process-arrow--highlight">→</div>
               <div class="case-process-item highlight">
                 <p class="case-process-item-title"><strong>Layout</strong><br>최적화</p>
               </div>
@@ -115,16 +110,13 @@
           <p class="case-section-label">Research <span class="case-section-sublabel">연구</span></p>
         </div>
         <div class="case-section-body">
-          <div>
-            <p class="case-body-text" style="margin:0">
-              <strong>Mixpanel</strong> 데이터 분석 결과를 바탕으로 프로젝트 목표와 단계별 작업 내용을 정의했습니다.
-            </p>
-            <p class="case-body-text" style="margin:0">
-              사용자의 주요 화면 크기를 분석한 결과, 데스크탑 사용 비율이 <strong>89.9%</strong>임을 확인했습니다. 이에 따라 우리는 모바일 기준을 최소화하고, 데스크탑의 세분화된 <strong>Breakpoint</strong>를 만들기로 결정했습니다.
-            </p>
-          </div>
+          <p class="case-body-text">
+            <strong>Mixpanel</strong> 데이터 분석 결과를 바탕으로 프로젝트 목표와 단계별 작업 내용을 정의했습니다.<br><br>
+            사용자의 주요 화면 크기를 분석한 결과, 데스크탑 사용 비율이 <strong>89.9%</strong>임을 확인했습니다. 이에 따라 우리는 모바일 기준을 최소화하고, 데스크탑의 세분화된 <strong>Breakpoint</strong>를 만들기로 결정했습니다.
+          </p>
           <div class="uv-chart">
             <div class="uv-caption">
+              <img class="uv-caption-icon" src="https://www.figma.com/api/mcp/asset/6b2233d0-1707-4206-9892-797e3166b231" alt="">
               <div class="uv-caption-title-group">
                 <span class="uv-caption-title">BO 방문자 수 (UV)</span>
                 <span class="uv-caption-date">2024.05 기준</span>
@@ -202,9 +194,11 @@
               </div>
             </div>
           </div>
+
+          <!-- Research Screenshot Grid — node 9:5762 -->
           <div class="case-img-zoom-wrap">
-            <img src="images/clay-layout-research.png" alt="BO 화면별 Breakpoint 현황">
-            <button class="case-zoom-btn" onclick="openResearchLightbox()">
+            <img src="https://www.figma.com/api/mcp/asset/76b667ad-d1af-4b95-8dcb-0365c94512b6" alt="BO 화면별 Breakpoint 현황 — Mobile, Tablet, Desktop">
+            <button class="case-zoom-btn" onclick="openLightbox(this.parentElement.querySelector('img').src)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
               확대보기
             </button>
@@ -221,13 +215,14 @@
           <p class="case-body-text">
             프로덕트 디자이너들로부터 현재 사용 중인 Breakpoint와 Layout 기준에 대한 피드백을 수집했습니다.
           </p>
-          <div class="case-image-table-group" style="gap: 0;">
-            <div class="case-content-block" style="padding-top: 40px;">
-              <p class="case-squad-title">Current by squad</p>
-              <img src="images/clay-layout-collaborate-01.png" alt="스쿼드별 Breakpoint 현황">
-            </div>
-            <div class="case-content-block">
-              <img src="images/clay-layout-collaborate-02.png" alt="스쿼드별 Breakpoint 현황 상세">
+          <div class="case-content-block">
+            <p class="case-content-label">Current by squad</p>
+            <div class="case-img-zoom-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/34a4b254-8d45-408e-84ee-76d0d4f78409" alt="스쿼드별 Breakpoint 현황">
+              <button class="case-zoom-btn" onclick="openLightbox(this.parentElement.querySelector('img').src)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                확대보기
+              </button>
             </div>
           </div>
         </div>
@@ -242,73 +237,52 @@
           <p class="case-body-text">
             일관된 사용자 경험을 위해 총 <strong>6</strong>가지 공통 기준을 정의했습니다. 데스크탑 화면에서는 네가지의 <strong>Breakpoint(1279, 1919, 2703, 2704+)</strong>를 제공합니다.
           </p>
-          <div class="case-image-table-group">
-            <div class="case-content-block" style="padding: 40px 40px 60px;">
-              <img src="images/clay-layout-criteria-setting.png" alt="Breakpoint 기준 정의">
-            </div>
-            <div class="case-breakpoints-table">
-              <div class="case-bp-header">
-                <span>Breakpoints</span>
-                <span>Value</span>
-                <span>Viewport <sup style="font-size:9px">px</sup></span>
-                <span>Columns</span>
-                <span>Margin</span>
-                <span>Gutter</span>
-                <span>Navigation</span>
+          <!-- Breakpoints diagram — node 9:5904 -->
+          <div class="bp-chart-wrap">
+            <div class="bp-chart">
+              <!-- Breakpoint labels (right-aligned at each boundary) -->
+              <span class="bp-val" style="left:95.26px">599</span>
+              <span class="bp-val" style="left:184.82px">959</span>
+              <span class="bp-val" style="left:302.21px">1279</span>
+              <span class="bp-val" style="left:calc(25% + 202.59px)">1919</span>
+              <span class="bp-val" style="left:calc(75% - 99.33px)">2703</span>
+              <!-- Double-headed range arrows -->
+              <img class="bp-arr" style="left:40px;width:53.697px" src="https://www.figma.com/api/mcp/asset/08e0ff1a-5260-43b5-a4c1-170dba23d1c0" alt="">
+              <img class="bp-arr" style="left:97.28px;width:85.969px" src="https://www.figma.com/api/mcp/asset/6d8aa4ec-4a3d-46e6-9546-1d4a3b424d8c" alt="">
+              <img class="bp-arr" style="left:186.84px;width:114.655px" src="https://www.figma.com/api/mcp/asset/15288329-c1ca-4ef3-a3a3-faac5f0b6080" alt="">
+              <img class="bp-arr" style="left:calc(25% + 30.58px);width:172.027px" src="https://www.figma.com/api/mcp/asset/e8efa0ad-f0a3-4334-aa4b-bf9a640aeb04" alt="">
+              <img class="bp-arr" style="left:calc(50% - 68.31px);width:242.308px" src="https://www.figma.com/api/mcp/asset/c5f84c2b-9767-4746-8b1a-b14240298bd1" alt="">
+              <img class="bp-arr" style="left:calc(75% - 96.92px);width:331.415px" src="https://www.figma.com/api/mcp/asset/c879df64-0db0-48e7-baa3-2881beab0fde" alt="">
+              <!-- Device mockups -->
+              <!-- Xsmall — portrait phone (top nav bar) -->
+              <div class="bp-dev" style="left:56.14px;width:32.272px;flex-direction:column">
+                <div class="bp-nav-h"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">xsmall <em>Small Phones</em></span>
-                <span>599</span>
-                <span>360-599</span>
-                <span>4</span>
-                <span><span class="case-bp-token">space-4</span></span>
-                <span><span class="case-bp-token">space-4</span></span>
-                <span class="case-bp-nav">Mobile</span>
+              <!-- Small — portrait phone (top nav bar) -->
+              <div class="bp-dev" style="left:124.18px;width:53.787px;flex-direction:column">
+                <div class="bp-nav-h"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">small <em>Phones</em></span>
-                <span>959</span>
-                <span>600-959</span>
-                <span>8</span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span class="case-bp-nav">Mobile</span>
+              <!-- Medium — landscape with thin left nav -->
+              <div class="bp-dev" style="left:238.47px;width:91.796px;flex-direction:row">
+                <div class="bp-nav-v" style="width:5.379px"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">medium <em>Desktops</em></span>
-                <span>1279</span>
-                <span>960-1279</span>
-                <span>12</span>
-                <span><span class="case-bp-token">space-10</span></span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span class="case-bp-nav">Collapsed <em>접힘</em></span>
+              <!-- Large — landscape with left sidebar -->
+              <div class="bp-dev" style="left:calc(25% + 109.47px);width:129.088px;flex-direction:row">
+                <div class="bp-nav-v"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">large <em>Desktops</em></span>
-                <span>1919</span>
-                <span>1280-1919</span>
-                <span>12</span>
-                <span><span class="case-bp-token">space-10</span></span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span class="case-bp-nav">Expanded <em>펼침</em></span>
+              <!-- Xlarge — landscape with left sidebar -->
+              <div class="bp-dev" style="left:calc(50% + 17.75px);width:172.117px;flex-direction:row">
+                <div class="bp-nav-v"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">xlarge <em>Desktops</em></span>
-                <span>2703</span>
-                <span>1920-2703</span>
-                <span>12</span>
-                <span><span class="case-bp-token">space-10</span></span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span class="case-bp-nav">Expanded <em>펼침</em></span>
-              </div>
-              <div class="case-bp-row">
-                <span class="case-bp-name">2xlarge <em>Desktops</em></span>
-                <span></span>
-                <span>2704+</span>
-                <span>12</span>
-                <span><span class="case-bp-token">space-10</span></span>
-                <span><span class="case-bp-token">space-6</span></span>
-                <span class="case-bp-nav">Expanded <em>펼침</em></span>
+              <!-- 2xlarge — landscape with left sidebar -->
+              <div class="bp-dev" style="left:calc(100% - 183.43px);width:286.861px;flex-direction:row">
+                <div class="bp-nav-v"></div>
+                <div class="bp-content"><span>Content</span></div>
               </div>
             </div>
           </div>
@@ -321,26 +295,43 @@
           <p class="case-section-label">Layout Optimization <span class="case-section-sublabel">레이아웃 최적화</span></p>
         </div>
         <div class="case-section-body">
-          <div>
-            <p class="case-body-text" style="margin:0">
-              최적화된 사용자 경험을 제공하기 위해 <strong>Layout</strong>을 재구성했습니다. 새로운 <strong>Breakpoint</strong> 기준에 맞춘 화면 크기별 그리드 시스템은 일관된 사용자 경험을 보장합니다.
-            </p>
-            <p class="case-body-text" style="margin:0">
-              기본적으로 컨테이너의 전체 너비를 차지하는 가변 그리드(<strong>Fluid</strong>)를 사용합니다. <strong>Fixed, Hybrid</strong>는 <strong>Large</strong> 이상의 <strong>Breakpoint</strong>에서 사용할 수 있습니다.
-            </p>
-          </div>
-          <div class="case-grid-row">
-            <div class="case-grid-card">
-              <p class="case-grid-card-title">❶ Fluid grid</p>
-              <img src="images/clay-layout-grid-fluid.png" alt="Fluid Grid">
+          <p class="case-body-text">
+            최적화된 사용자 경험을 제공하기 위해 <strong>Layout</strong>을 재구성했습니다. 새로운 <strong>Breakpoint</strong> 기준에 맞춘 화면 크기별 그리드 시스템은 일관된 사용자 경험을 보장합니다.<br><br>
+            기본적으로 컨테이너의 전체 너비를 차지하는 가변 그리드(<strong>Fluid</strong>)를 사용합니다. <strong>Fixed, Hybrid</strong>는 <strong>Large</strong> 이상의 <strong>Breakpoint</strong>에서 사용할 수 있습니다.
+          </p>
+          <div class="case-grid-types">
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--fluid">
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col"></div>
+              </div>
+              <p class="case-grid-label">❶ Fluid grid</p>
+              <p class="case-grid-desc">Fluid</p>
             </div>
-            <div class="case-grid-card">
-              <p class="case-grid-card-title">❷ Fixed grid</p>
-              <img src="images/clay-layout-grid-fixed.png" alt="Fixed Grid">
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--fixed">
+                <div class="case-grid-margin"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-margin"></div>
+              </div>
+              <p class="case-grid-label">❷ Fixed grid</p>
+              <p class="case-grid-desc">Fixed</p>
             </div>
-            <div class="case-grid-card">
-              <p class="case-grid-card-title">❸ Hybrid grid</p>
-              <img src="images/clay-layout-grid-hybrid.png" alt="Hybrid Grid">
+            <div class="case-grid-type">
+              <div class="case-grid-type-visual case-grid-type-visual--hybrid">
+                <div class="case-grid-col"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col case-grid-col--fixed"></div>
+                <div class="case-grid-col"></div>
+              </div>
+              <p class="case-grid-label">❸ Hybrid grid</p>
+              <p class="case-grid-desc">Fluid + Fixed</p>
             </div>
           </div>
         </div>
@@ -355,13 +346,8 @@
           <p class="case-body-text">
             다양한 화면 크기에서 새로운 레이아웃을 테스트하여 일관된 사용자 경험을 보장하고, 필요한 경우 프로덕트 디자이너와 함께 추가 조정을 진행 했습니다.
           </p>
-          <div class="case-image-table-group">
-            <div class="case-content-block">
-              <img src="images/clay-layout-testing.png" alt="화면 크기별 레이아웃 테스트">
-            </div>
-            <div class="case-content-block">
-              <img src="images/clay-layout-feedback.png" alt="피드백 및 반복 개선">
-            </div>
+          <div class="case-content-block">
+            <img src="https://www.figma.com/api/mcp/asset/d46a6bbd-8fde-4580-bb06-a467acb5266a" alt="화면 크기별 레이아웃 테스트" />
           </div>
         </div>
       </div>
@@ -375,8 +361,33 @@
           <p class="case-body-text">
             360, 1024, 1440, 1920을 기본 스크린 사이즈로 설정하고, 필요에 따라 600과 3200 사이즈를 추가할 수 있도록 유연성을 부여했습니다.
           </p>
-          <div style="border-radius:0; overflow:hidden;">
-            <img src="images/clay-layout-workspace-integration.png" alt="워크스페이스 스크린 사이즈 표준화" style="width:100%; height:auto; display:block;">
+          <div class="case-workspace-sizes">
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--xsmall">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">360</p>
+              <p class="case-ws-optional">600 (Optional)</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--small">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1024</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--medium">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1440</p>
+            </div>
+            <div class="case-ws-size">
+              <div class="case-ws-frame case-ws-frame--large">
+                <span>Content</span>
+              </div>
+              <p class="case-ws-label">1920</p>
+              <p class="case-ws-optional">3200 (Optional)</p>
+            </div>
           </div>
         </div>
       </div>
@@ -387,14 +398,12 @@
           <p class="case-section-label">Results and<br>Achievements <span class="case-section-sublabel">결과 및 성과</span></p>
         </div>
         <div class="case-section-body">
-          <div>
-            <p class="case-body-text" style="margin:0">
-              이 프로젝트는 실제 사용자 데이터를 기반으로 기준을 통합하고 최적화하여 사용자 경험을 개선하고 작업자의 효율을 크게 높이는데 기여했습니다.
-            </p>
-            <p class="case-body-text" style="margin:0">
-              필요에 따라 화면 크기를 추가할 수 있어 유연한 디자인 시스템을 제공할 수 있도록 했고, 디자이너들과 정기적인 피드백을 통해 <strong>Clay</strong>만의 <strong>Breakpoint</strong>와 그리드 시스템의 구축할 수 있었습니다. 또한 다양한 화면 크기에서도 일관된 사용자 경험을 제공할 수 있는 레이아웃을 최적화했습니다.
-            </p>
-          </div>
+          <p class="case-body-text">
+            이 프로젝트는 실제 사용자 데이터를 기반으로 기준을 통합하고 최적화하여 사용자 경험을 개선하고 작업자의 효율을 크게 높이는데 기여했습니다.
+          </p>
+          <p class="case-body-text">
+            필요에 따라 화면 크기를 추가할 수 있어 유연한 디자인 시스템을 제공할 수 있도록 했고, 디자이너들과 정기적인 피드백을 통해 <strong>Clay</strong>만의 <strong>Breakpoint</strong>와 그리드 시스템의 구축할 수 있었습니다. 또한 다양한 화면 크기에서도 일관된 사용자 경험을 제공할 수 있는 레이아웃을 최적화했습니다.
+          </p>
         </div>
       </div>
 
@@ -412,11 +421,12 @@
     </div>
   </div>
   <script>
-    function openResearchLightbox() {
+    function openLightbox(src) {
+      if (!src) return;
       var overlay = document.createElement('div');
       overlay.className = 'lightbox-overlay';
       var img = document.createElement('img');
-      img.src = 'images/clay-layout-research-original.png';
+      img.src = src;
       overlay.appendChild(img);
       function close() { overlay.remove(); document.removeEventListener('keydown', onKey); }
       function onKey(e) { if (e.key === 'Escape') close(); }
