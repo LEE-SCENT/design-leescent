@@ -1896,6 +1896,7 @@ a {
 .cc-color-text {
   flex: 1;
   font-family: var(--font-pretendard);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   color: #717680;
@@ -1931,6 +1932,7 @@ a {
 
 .cc-token-desc {
   font-family: var(--font-pretendard);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   color: #717680;
