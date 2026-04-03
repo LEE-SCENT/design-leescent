@@ -1804,10 +1804,21 @@ a {
 /* ─── Case Typeface Table ─── */
 
 .case-typeface-table {
-  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
+}
+
+.case-image-table-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.case-image-table-group .case-content-block {
+  border-radius: 0;
+  background: none;
 }
 
 .case-typeface-header {
@@ -1817,7 +1828,7 @@ a {
   gap: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.75;
   color: var(--white-50);
