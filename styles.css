@@ -1229,7 +1229,7 @@ a {
   font-size: 9px;
   font-weight: 400;
   color: var(--white);
-  margin-left: 4px;
+  vertical-align: top;
 }
 
 .case-bp-token {
