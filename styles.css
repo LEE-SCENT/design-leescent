@@ -1823,10 +1823,8 @@ a {
 /* ─── Case Typeface Table ─── */
 
 .case-typeface-table {
-  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .case-typeface-header {
@@ -1834,9 +1832,9 @@ a {
   grid-template-columns: 1fr 1fr 2fr;
   padding: 12px 20px;
   gap: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #1D2027;
   font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 11px;
   line-height: 1;
   color: var(--white-50);
@@ -1847,7 +1845,7 @@ a {
   grid-template-columns: 1fr 1fr 2fr;
   padding: 10px 20px;
   gap: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #1D2027;
   align-items: center;
 }
 
