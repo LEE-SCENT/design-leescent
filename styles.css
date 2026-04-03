@@ -1081,7 +1081,7 @@ a {
 .case-content-block {
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .case-content-block img {
@@ -1799,6 +1799,23 @@ a {
   font-weight: 700;
   color: #8f00ff;
   white-space: nowrap;
+}
+
+/* ─── Case Subsection ─── */
+
+.case-subsection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-subsection-title {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ─── Case Study Responsive ─── */
