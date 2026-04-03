@@ -1298,7 +1298,7 @@ a {
 
 .case-grid-label {
   font-family: var(--font-pretendard);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   color: var(--white);
@@ -1754,7 +1754,7 @@ a {
 
 .bp-table-header {
   border-bottom: 1px solid #1D2027;
-  font-weight: 700;
+  font-weight: 600;
   color: #717680;
   line-height: 2.4;
 }
