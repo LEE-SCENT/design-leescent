@@ -1286,7 +1286,9 @@ a {
 
 .case-grid-type {
   flex: 1;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .case-grid-type img {
@@ -1296,17 +1298,14 @@ a {
 }
 
 .case-grid-label {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: var(--font-pretendard);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   color: var(--white);
   white-space: nowrap;
-  z-index: 1;
+  text-align: center;
+  padding: 24px 20px 20px;
 }
 
 /* ─── Workspace Sizes ─── */
