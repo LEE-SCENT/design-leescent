@@ -1805,6 +1805,7 @@ a {
 
 .case-typeface-table {
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .case-image-table-group {
@@ -1813,12 +1814,10 @@ a {
   gap: 2px;
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .case-image-table-group .case-content-block {
   border-radius: 0;
-  background: none;
 }
 
 .case-typeface-header {
@@ -1826,7 +1825,7 @@ a {
   grid-template-columns: 1fr 1fr 2fr;
   padding: 12px 20px;
   gap: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #1D2027;
   font-family: var(--font-pretendard);
   font-weight: 600;
   font-size: 16px;
@@ -1839,7 +1838,7 @@ a {
   grid-template-columns: 1fr 1fr 2fr;
   padding: 10px 20px;
   gap: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #1D2027;
   align-items: center;
 }
 
