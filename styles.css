@@ -1726,19 +1726,18 @@ a {
   z-index: 9999;
   display: flex;
   align-items: center;
-  justify-content: center;
   cursor: zoom-out;
   padding: 80px 32px;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 .lightbox-overlay img {
-  max-height: 100%;
+  max-height: calc(100vh - 160px);
   width: auto;
   height: auto;
-  object-fit: contain;
   border-radius: 8px;
   flex-shrink: 0;
+  margin: auto;
 }
 
 .case-content-label {
