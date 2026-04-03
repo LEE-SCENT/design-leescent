@@ -1763,17 +1763,16 @@ a {
   z-index: 9999;
   display: flex;
   align-items: center;
-  justify-content: center;
+  overflow-x: auto;
+  overflow-y: hidden;
   cursor: zoom-out;
-  padding: 32px;
+  padding: 80px 40px;
 }
 
 .lightbox-overlay img {
-  max-width: 100%;
-  max-height: 100%;
+  height: calc(100vh - 160px);
   width: auto;
-  height: auto;
-  object-fit: contain;
+  flex-shrink: 0;
   border-radius: 8px;
 }
 
