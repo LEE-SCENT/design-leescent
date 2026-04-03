@@ -1082,6 +1082,18 @@ a {
   font-style: normal;
 }
 
+.case-image-table-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.case-image-table-group .case-content-block {
+  border-radius: 0;
+}
+
 .case-content-block {
   border-radius: 20px;
   overflow: hidden;
@@ -2123,11 +2135,11 @@ a {
   font-size: 18px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.5);
-  margin: 0 0 8px;
+  margin: 0;
 }
 
 .ds-result-ol {
-  font-family: var(--font-pretendard);
+  font-family: var(--font-helvetica);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.3;
@@ -2145,7 +2157,7 @@ a {
 .ds-feedback-title {
   font-family: var(--font-pretendard);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.4;
   color: var(--white);
   margin: 0;
@@ -2161,7 +2173,7 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 14px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-family: var(--font-pretendard);
   font-weight: 400;
