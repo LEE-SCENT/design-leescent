@@ -1750,6 +1750,89 @@ a {
   letter-spacing: 0.02em;
 }
 
+/* ─── Breakpoints Table ─── */
+.bp-table {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bp-table-header {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1.2fr 0.6fr 1fr 0.8fr 1.4fr;
+  padding: 20px;
+  gap: 16px;
+  border-bottom: 1px solid #1D2027;
+  font-family: var(--font-helvetica);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--white-50);
+}
+
+.bp-table-row {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1.2fr 0.6fr 1fr 0.8fr 1.4fr;
+  padding: 14px 20px;
+  gap: 16px;
+  border-bottom: 1px solid #1D2027;
+  align-items: center;
+  font-family: var(--font-pretendard);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.bp-table-row:last-child {
+  border-bottom: none;
+}
+
+.bp-table-bp {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.bp-table-device {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--white-50);
+}
+
+.bp-table-val,
+.bp-table-vp,
+.bp-table-col {
+  color: var(--white-50);
+  font-weight: 400;
+}
+
+.bp-table-token {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(113, 118, 128, 0.2);
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.bp-table-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 400;
+  color: var(--white-50);
+}
+
+.bp-table-nav-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .case-squad-title {
   font-family: var(--font-pretendard);
   font-weight: 600;

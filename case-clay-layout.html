@@ -122,6 +122,10 @@
           </p>
           <div class="uv-chart">
             <div class="uv-caption">
+              <svg class="uv-caption-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="20" height="20" rx="4" fill="#7856FF"/>
+                <path d="M4 14V7L7.5 11.5L10 8.5L12.5 11.5L16 7V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
               <div class="uv-caption-title-group">
                 <span class="uv-caption-title">BO 방문자 수 (UV)</span>
                 <span class="uv-caption-date">2024.05 기준</span>
@@ -241,8 +245,75 @@
           <p class="case-body-text">
             일관된 사용자 경험을 위해 총 <strong>6</strong>가지 공통 기준을 정의했습니다. 데스크탑 화면에서는 네가지의 <strong>Breakpoint(1279, 1919, 2703, 2704+)</strong>를 제공합니다.
           </p>
-          <div class="case-content-block">
-            <img src="images/clay-layout-criteria-setting.png" alt="Breakpoint 기준 정의">
+          <div class="case-image-table-group">
+            <div class="case-content-block" style="padding:40px">
+              <img src="images/clay-layout-criteria-setting.png" alt="Breakpoint 기준 정의">
+            </div>
+            <div class="bp-table">
+              <div class="bp-table-header">
+                <span>Breakpoints</span>
+                <span>Value</span>
+                <span>Viewport px</span>
+                <span>Columns</span>
+                <span>Margin</span>
+                <span>Gutter</span>
+                <span>Navigation</span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">xsmall <span class="bp-table-device">Mobile</span></span>
+                <span class="bp-table-val">—</span>
+                <span class="bp-table-vp">360-599</span>
+                <span class="bp-table-col">4</span>
+                <span class="bp-table-token">space-4</span>
+                <span class="bp-table-token">space-4</span>
+                <span class="bp-table-nav">Mobile</span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">small <span class="bp-table-device">Mobile</span></span>
+                <span class="bp-table-val">599</span>
+                <span class="bp-table-vp">600-959</span>
+                <span class="bp-table-col">4</span>
+                <span class="bp-table-token">space-4</span>
+                <span class="bp-table-token">space-4</span>
+                <span class="bp-table-nav">Mobile</span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">medium <span class="bp-table-device">Tablet</span></span>
+                <span class="bp-table-val">959</span>
+                <span class="bp-table-vp">960-1279</span>
+                <span class="bp-table-col">8</span>
+                <span class="bp-table-token">space-6</span>
+                <span class="bp-table-token">space-6</span>
+                <span class="bp-table-nav">Collapsed <span class="bp-table-nav-sub">접힘</span></span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">large <span class="bp-table-device">Desktop</span></span>
+                <span class="bp-table-val">1279</span>
+                <span class="bp-table-vp">1280-1919</span>
+                <span class="bp-table-col">12</span>
+                <span class="bp-table-token">space-10</span>
+                <span class="bp-table-token">space-6</span>
+                <span class="bp-table-nav">Expanded <span class="bp-table-nav-sub">펼침</span></span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">xlarge <span class="bp-table-device">Desktop</span></span>
+                <span class="bp-table-val">1919</span>
+                <span class="bp-table-vp">1920-2703</span>
+                <span class="bp-table-col">12</span>
+                <span class="bp-table-token">space-10</span>
+                <span class="bp-table-token">space-6</span>
+                <span class="bp-table-nav">Expanded <span class="bp-table-nav-sub">펼침</span></span>
+              </div>
+              <div class="bp-table-row">
+                <span class="bp-table-bp">2xlarge <span class="bp-table-device">Desktop</span></span>
+                <span class="bp-table-val">2703</span>
+                <span class="bp-table-vp">2704+</span>
+                <span class="bp-table-col">12</span>
+                <span class="bp-table-token">space-10</span>
+                <span class="bp-table-token">space-6</span>
+                <span class="bp-table-nav">Expanded <span class="bp-table-nav-sub">펼침</span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -319,34 +390,7 @@
           <p class="case-body-text">
             360, 1024, 1440, 1920을 기본 스크린 사이즈로 설정하고, 필요에 따라 600과 3200 사이즈를 추가할 수 있도록 유연성을 부여했습니다.
           </p>
-          <div class="case-workspace-sizes">
-            <div class="case-ws-size">
-              <div class="case-ws-frame case-ws-frame--xsmall">
-                <span>Content</span>
-              </div>
-              <p class="case-ws-label">360</p>
-              <p class="case-ws-optional">600 (Optional)</p>
-            </div>
-            <div class="case-ws-size">
-              <div class="case-ws-frame case-ws-frame--small">
-                <span>Content</span>
-              </div>
-              <p class="case-ws-label">1024</p>
-            </div>
-            <div class="case-ws-size">
-              <div class="case-ws-frame case-ws-frame--medium">
-                <span>Content</span>
-              </div>
-              <p class="case-ws-label">1440</p>
-            </div>
-            <div class="case-ws-size">
-              <div class="case-ws-frame case-ws-frame--large">
-                <span>Content</span>
-              </div>
-              <p class="case-ws-label">1920</p>
-              <p class="case-ws-optional">3200 (Optional)</p>
-            </div>
-          </div>
+          <img src="images/clay-layout-workspace-integration.png" alt="작업환경 표준화" style="width:100%;height:auto;display:block;">
         </div>
       </div>
 
