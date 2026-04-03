@@ -1242,6 +1242,7 @@ a {
   font-family: var(--font-pretendard);
   font-weight: 500;
   font-size: 12px;
+  line-height: 2;
   color: var(--white);
   white-space: nowrap;
   width: fit-content;
@@ -1251,7 +1252,7 @@ a {
   font-style: normal;
   font-size: 9px;
   color: var(--white);
-  margin-left: 4px;
+  vertical-align: top;
 }
 
 /* ─── Grid Types ─── */
