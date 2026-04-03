@@ -1830,7 +1830,7 @@ a {
 .case-typeface-header {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  padding: 12px 20px;
+  padding: 20px;
   gap: 20px;
   border-bottom: 1px solid #1D2027;
   font-family: var(--font-helvetica);
