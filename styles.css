@@ -1752,33 +1752,41 @@ a {
 
 /* ─── Breakpoints Table ─── */
 .bp-table {
-  overflow: hidden;
+  overflow-x: auto;
   background: rgba(255, 255, 255, 0.1);
 }
 
+.bp-table-header,
+.bp-table-row {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px;
+  font-family: var(--font-pretendard);
+  font-size: 14px;
+  min-width: max-content;
+}
+
+.bp-col-bp  { width: 168px; flex-shrink: 0; }
+.bp-col-val { width: 98px;  flex-shrink: 0; }
+.bp-col-vp  { flex: 1 0 0; min-width: 90px; }
+.bp-col-col { width: 98px;  flex-shrink: 0; }
+.bp-col-flex { flex: 1 0 0; min-width: 80px; }
+
 .bp-table-header {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 1.2fr 0.6fr 1fr 0.8fr 1.4fr;
-  padding: 20px;
-  gap: 16px;
   border-bottom: 1px solid #1D2027;
-  font-family: var(--font-helvetica);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-  color: var(--white-50);
+  font-weight: 700;
+  color: #717680;
+  line-height: 2.4;
+}
+
+.bp-table-unit {
+  font-size: 9px;
 }
 
 .bp-table-row {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 1.2fr 0.6fr 1fr 0.8fr 1.4fr;
-  padding: 14px 20px;
-  gap: 16px;
   border-bottom: 1px solid #1D2027;
   align-items: center;
-  font-family: var(--font-pretendard);
-  font-size: 16px;
-  line-height: 1.4;
+  min-height: 40px;
 }
 
 .bp-table-row:last-child {
@@ -1787,52 +1795,58 @@ a {
 
 .bp-table-bp {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 6px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--white);
+  line-height: 2.4;
 }
 
 .bp-table-device {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 9px;
   color: var(--white-50);
 }
 
 .bp-table-val,
 .bp-table-vp,
 .bp-table-col {
-  color: var(--white-50);
+  color: var(--white);
   font-weight: 400;
+  line-height: 2.4;
+}
+
+.bp-table-cell {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
 }
 
 .bp-table-token {
   display: inline-flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.03);
+  background: #1d2027;
   border: 1px solid rgba(113, 118, 128, 0.2);
   border-radius: 8px;
-  padding: 4px 8px;
+  padding: 4px 6px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 11px;
   color: var(--white);
   white-space: nowrap;
-  width: fit-content;
 }
 
 .bp-table-nav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 6px;
+  align-items: baseline;
+  gap: 4px;
   font-weight: 400;
-  color: var(--white-50);
+  color: var(--white);
+  line-height: 2.4;
 }
 
 .bp-table-nav-sub {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: 9px;
+  color: var(--white-50);
 }
 
 .case-squad-title {
