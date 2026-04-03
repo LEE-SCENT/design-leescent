@@ -1192,7 +1192,7 @@ a {
 .case-bp-header {
   display: grid;
   grid-template-columns: 168px 98px 1fr 98px 1fr 1fr 1fr;
-  padding: 0 20px;
+  padding: 8px 20px;
   border-bottom: 1px solid #1D2027;
   font-family: var(--font-pretendard);
   font-weight: 600;
