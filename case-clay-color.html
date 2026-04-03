@@ -132,6 +132,214 @@
             <div class="case-content-block">
               <img src="images/clay-color-define-color.png" alt="주요 컬러 팔레트 정의">
             </div>
+
+            <!-- Color role descriptions -->
+            <div class="cc-color-list">
+              <div class="cc-color-row">
+                <div class="cc-swatch" style="background:#000; border:1px solid rgba(255,255,255,0)"></div>
+                <p class="cc-color-text"><strong class="cc-color-name">slate</strong> 는 무채색 색상으로 일반적인 상황에서 버튼(CTA)이나 포인트 및 액션 컴포넌트와 같은 UI 전반의 구성 요소의 색상으로 사용합니다. 회색 음영의 배경(Background), 선(Border) 및 그림자(Shadow) 등 컴포넌트의 계층을 구분하는데서도 사용됩니다.</p>
+              </div>
+              <div class="cc-color-row">
+                <div class="cc-swatch" style="background:#00B9FF"></div>
+                <p class="cc-color-text"><strong class="cc-color-name">blue</strong> 는 구성요소를 눈에 띄게 하거나 사용자의 관심을 집중시키고자 할 때 사용됩니다. 즉각적인 조치가 필요하지 않은 중요한 요소를 나타내기도 합니다. 주의가 필요한 새로운 정보(Informative) 및 배지에 사용합니다.</p>
+              </div>
+              <div class="cc-color-row">
+                <div class="cc-swatch" style="background:#00E600"></div>
+                <p class="cc-color-text"><strong class="cc-color-name">neonGreen</strong> 은 성공(Success) 상태를 나타냅니다.</p>
+              </div>
+              <div class="cc-color-row">
+                <div class="cc-swatch" style="background:#FFAA00"></div>
+                <p class="cc-color-text"><strong class="cc-color-name">mustard</strong> 는 주의가 필요함(Attention Required)을 나타냅니다. 경고, 보류, 누락 또는 진행 방해 상태를 전달합니다.</p>
+              </div>
+              <div class="cc-color-row">
+                <div class="cc-swatch" style="background:#FF4040"></div>
+                <p class="cc-color-text"><strong class="cc-color-name">coralRed</strong> 는 문제(Problem)를 나타냅니다. 위험, 오류, 실패, 삭제, 중지 또는 거부 상태를 전달합니다.</p>
+              </div>
+              <div class="cc-color-row">
+                <div class="cc-swatch-group">
+                  <div class="cc-swatch" style="background:#CD28FD"></div>
+                  <div class="cc-swatch" style="background:#FF50DA"></div>
+                </div>
+                <p class="cc-color-text"><strong class="cc-color-name">neonPurple · pink</strong> 는 의미를 지정하지 않고, 브랜드의 친근함을 전달하기 위해 제품 내 일러스트나 회사 관련 공지사항 등에 활용됩니다.</p>
+              </div>
+            </div>
+
+            <!-- Text semantic token table -->
+            <div class="cc-token-section">
+              <div>
+                <p class="cc-token-title">Text</p>
+                <p class="cc-token-desc">텍스트 위계에 따라 Text, Text-sub를 기본으로 사용하며 각 화면 구성 요소에 따라 이외(Accent, Warning, Critical)의 컬러를 사용합니다. 아이콘과 함께 사용될 경우 색상 토큰을 공유합니다.</p>
+              </div>
+              <div class="cc-token-table">
+                <div class="cc-token-table-header">
+                  <span>Semantic token</span>
+                  <span>Usage</span>
+                  <span>Value</span>
+                  <span>Example</span>
+                </div>
+                <!-- text -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text</span></div>
+                  <div class="cc-token-col-usage">Default text, Primary label color</div>
+                  <div class="cc-token-col-value">🌝 slate-900<br>🌚 slate-white</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#15181e"></div>
+                    <div class="cc-ex-swatch cc-ex-swatch--bordered" style="background:#fff"></div>
+                  </div>
+                </div>
+                <!-- text-sub -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-sub</span></div>
+                  <div class="cc-token-col-usage">Sub text, Secondary label, Placeholder color</div>
+                  <div class="cc-token-col-value">🌝 slate-500<br>🌚 slate-500</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#717680"></div>
+                    <div class="cc-ex-swatch" style="background:#717680"></div>
+                  </div>
+                </div>
+                <!-- text-minimal -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-minimal</span></div>
+                  <div class="cc-token-col-usage">설명</div>
+                  <div class="cc-token-col-value">🌝 slate-400<br>🌚 slate-600</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#9fa3ab"></div>
+                    <div class="cc-ex-swatch" style="background:#4b515b"></div>
+                  </div>
+                </div>
+                <!-- text-disabled -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-disabled</span></div>
+                  <div class="cc-token-col-usage">Disabled text, Placeholder disabled text color</div>
+                  <div class="cc-token-col-value">🌝 slate-300<br>🌚 slate-600</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#bcc0c6"></div>
+                    <div class="cc-ex-swatch" style="background:#4b515b"></div>
+                  </div>
+                </div>
+                <!-- text-critical -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-critical</span></div>
+                  <div class="cc-token-col-usage">Error, Critical state text color</div>
+                  <div class="cc-token-col-value">🌝 coralRed-600<br>🌚 coralRed-600</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#ed1515"></div>
+                    <div class="cc-ex-swatch" style="background:#ed1515"></div>
+                  </div>
+                </div>
+                <!-- text-critical-hover -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-critical-hover</span></div>
+                  <div class="cc-token-col-usage">Error, Critical text hover color (액션 기능이 있을 경우)</div>
+                  <div class="cc-token-col-value">🌝 coralRed-700<br>🌚 coralRed-500</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#c80d0d"></div>
+                    <div class="cc-ex-swatch" style="background:#ff4040"></div>
+                  </div>
+                </div>
+                <!-- text-warning -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-warning</span></div>
+                  <div class="cc-token-col-usage">Warning state text color</div>
+                  <div class="cc-token-col-value">🌝 mustard-600<br>🌚 mustard-700</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#e28100"></div>
+                    <div class="cc-ex-swatch" style="background:#bb5902"></div>
+                  </div>
+                </div>
+                <!-- text-warning-hover -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-warning-hover</span></div>
+                  <div class="cc-token-col-usage">Warning text hover color (액션 기능이 있을 경우)</div>
+                  <div class="cc-token-col-value">🌝 mustard-700<br>🌚 mustard-600</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#bb5902"></div>
+                    <div class="cc-ex-swatch" style="background:#e28100"></div>
+                  </div>
+                </div>
+                <!-- text-success -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-success</span></div>
+                  <div class="cc-token-col-usage">Success text color</div>
+                  <div class="cc-token-col-value">🌝 neonGreen-600<br>🌚 neonGreen-600</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#00b505"></div>
+                    <div class="cc-ex-swatch" style="background:#00b505"></div>
+                  </div>
+                </div>
+                <!-- text-accent -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-accent</span></div>
+                  <div class="cc-token-col-usage">Link text, Primary text button color</div>
+                  <div class="cc-token-col-value">🌝 blue-600<br>🌚 blue-500</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#0090d4"></div>
+                    <div class="cc-ex-swatch" style="background:#00b9ff"></div>
+                  </div>
+                </div>
+                <!-- text-accent-hover -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-accent-hover</span></div>
+                  <div class="cc-token-col-usage">Link text, Primary text button hover color</div>
+                  <div class="cc-token-col-value">🌝 blue-700<br>🌚 blue-400</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#0072ab"></div>
+                    <div class="cc-ex-swatch" style="background:#2ccaff"></div>
+                  </div>
+                </div>
+                <!-- text-secondary -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-secondary</span></div>
+                  <div class="cc-token-col-usage">Secondary text button color</div>
+                  <div class="cc-token-col-value">🌝 slate-600<br>🌚 slate-300</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#4b515b"></div>
+                    <div class="cc-ex-swatch" style="background:#bcc0c6"></div>
+                  </div>
+                </div>
+                <!-- text-secondary-hover -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-secondary-hover</span></div>
+                  <div class="cc-token-col-usage">Secondary text button hover color</div>
+                  <div class="cc-token-col-value">🌝 slate-700<br>🌚 slate-400</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#24282f"></div>
+                    <div class="cc-ex-swatch" style="background:#9fa3ab"></div>
+                  </div>
+                </div>
+                <!-- text-on -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-on</span></div>
+                  <div class="cc-token-col-usage">Text on button text color</div>
+                  <div class="cc-token-col-value">🌝 slate-white<br>🌚 slate-white</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch cc-ex-swatch--bordered" style="background:#fff"></div>
+                    <div class="cc-ex-swatch cc-ex-swatch--bordered" style="background:#fff"></div>
+                  </div>
+                </div>
+                <!-- text-on-hover -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-on-hover</span></div>
+                  <div class="cc-token-col-usage">Text on button text hover color</div>
+                  <div class="cc-token-col-value">🌝 slate-100<br>🌚 slate-300</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch" style="background:#e2e5e9"></div>
+                    <div class="cc-ex-swatch" style="background:#bcc0c6"></div>
+                  </div>
+                </div>
+                <!-- text-inverse -->
+                <div class="cc-token-row">
+                  <div class="cc-token-col-token"><span class="cc-token-tag">text-inverse</span></div>
+                  <div class="cc-token-col-usage">Primary, Critical, button text color</div>
+                  <div class="cc-token-col-value">🌝 slate-white<br>🌚 slate-900</div>
+                  <div class="cc-token-col-example">
+                    <div class="cc-ex-swatch cc-ex-swatch--bordered" style="background:#fff"></div>
+                    <div class="cc-ex-swatch" style="background:#15181e"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="case-content-block">
               <img src="images/clay-color-define-token.png" alt="컬러 시맨틱 토큰 정의">
             </div>
