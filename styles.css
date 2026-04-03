@@ -826,6 +826,10 @@ a {
   color: #9747ff;
 }
 
+.cases-item-tbd .cases-item-date {
+  display: none;
+}
+
 /* ─── Responsive ────────────────────────────── */
 @media (max-width: 1600px) {
   .container {
