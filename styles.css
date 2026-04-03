@@ -1255,6 +1255,42 @@ a {
   vertical-align: top;
 }
 
+/* ─── Grid Row (Layout Optimization) ─── */
+
+.case-grid-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.case-grid-card {
+  flex: 1 1 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.case-grid-card-title {
+  font-family: var(--font-pretendard);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--white);
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+
+.case-grid-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ─── Grid Types ─── */
 
 .case-grid-types {
