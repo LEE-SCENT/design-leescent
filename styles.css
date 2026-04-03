@@ -2060,6 +2060,96 @@ a {
   }
 }
 
+/* ─── Clay Color: Color List & Token Section ─── */
+
+.cc-color-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+}
+
+.cc-color-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.cc-swatch {
+  width: 66px;
+  height: 32px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cc-swatch-group {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  width: 66px;
+}
+
+.cc-swatch-group .cc-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
+
+.cc-swatch-group .cc-swatch:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.cc-swatch-group .cc-swatch:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.cc-color-text {
+  flex: 1;
+  font-family: var(--font-pretendard);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #717680;
+  margin: 0;
+}
+
+.cc-color-name {
+  color: #fff;
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.cc-token-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.cc-token-title {
+  font-family: var(--font-pretendard);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.cc-token-desc {
+  font-family: var(--font-pretendard);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #717680;
+  margin: 0;
+}
+
 /* ─── Clay DS: Design Results, Stats, Feedback ─── */
 
 .ds-result-title {
