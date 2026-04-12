@@ -1486,22 +1486,14 @@ a {
   justify-content: flex-end;
 }
 
-.case-footer-nav-disabled {
-  opacity: 0.3;
+.case-body-link-disabled {
+  text-decoration: underline;
+  text-underline-offset: 3px;
   cursor: default;
 }
 
-.case-footer-nav-disabled .case-nav-label {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.case-nav-soon {
-  font-family: var(--font-helvetica);
-  font-weight: 500;
-  font-size: 14px;
-  flex-shrink: 0;
-  white-space: nowrap;
+.case-body-link-soon {
+  opacity: 0.5;
 }
 
 .case-nav-label {
