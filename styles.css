@@ -1486,6 +1486,24 @@ a {
   justify-content: flex-end;
 }
 
+.case-footer-nav-disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.case-footer-nav-disabled .case-nav-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.case-nav-soon {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .case-nav-label {
   overflow: hidden;
   text-overflow: ellipsis;
