@@ -35,6 +35,7 @@
           <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
         </div>
         <div class="case-section-body">
+          <p class="case-body-text">사용자 경험과 CRM 제품의 완성도를 높일 수 있는 프로젝트를 진행 했습니다.<br>카카오 친구톡 메시지에 개인화된 변수를 활용하여 맞춤 컨텐츠를 제공합니다. 여러 개의 카드를 스와이프하여 확인할 수 있는 '캐러셀 피드형' 템플릿은 친구톡에서 가장 자주 쓰이는 템플릿 중 하나로, 사용자의 고객(<strong>End User</strong>)들에게 보다 다양한 콘텐츠를 제공해줄 수 있는 환경을 만들어 메시지의 효율을 높일 수 있습니다.</p>
         </div>
       </div>
 
@@ -44,6 +45,7 @@
           <p class="case-section-label">Collaborators <span class="case-section-sublabel">협업</span></p>
         </div>
         <div class="case-section-body">
+          <p class="case-body-text">Platform designer(1), Product owner(1), Front-end engineer(1), Back-end engineer(1)</p>
         </div>
       </div>
 
@@ -53,15 +55,66 @@
           <p class="case-section-label">Goals <span class="case-section-sublabel">목표</span></p>
         </div>
         <div class="case-section-body">
+          <p class="case-body-text">개인화 변수를 동적으로 삽입하여 메시지를 발송할 수 있는 기능을 구현하고, 이름, 아이디, 등급, 가입 경과일 등 고객 회원 정보를 활용해 메시지를 개인화 합니다.<br>사용자가 카카오 친구톡을 통해 상호작용할 때의 <strong>UI/UX</strong>를 디자인합니다. 이는 버튼의 위치, 상호작용 플로우, 애니메이션 등을 포함합니다.</p>
         </div>
       </div>
 
-      <!-- Design Process -->
+      <!-- Role & Process -->
       <div class="case-section">
         <div class="case-section-header">
-          <p class="case-section-label">Design Process <span class="case-section-sublabel">디자인 프로세스</span></p>
+          <p class="case-section-label">Role &amp; Process <span class="case-section-sublabel">역할 및 프로세스</span></p>
         </div>
         <div class="case-section-body">
+          <p class="case-body-text"><strong>Research, Product Designer : 100% 기여</strong></p>
+          <p class="case-body-text">개인화된 메시지를 제공할 수 있는 개인화 변수 구현 방식을 연구했습니다.<br>루나 소프트가 제공하는 솔루션의 <strong>API</strong>를 분석해 구현 가능한 범위를 파악합니다. <strong>API</strong> 기능을 효율적으로 활용할 수 있도록 사용자 인터페이스를 설계합니다.<br>유지보수 및 작업 효율을 높이기 위해 기존 디자인을 <strong>Clay</strong>에 맞춰 리팩토링을 진행 했습니다.</p>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Research <span class="case-section-sublabel">연구</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">경쟁사 분석을 통해 개인화 변수 기능을 어떻게 제공하고 있는지 패턴을 조사했습니다. 대부분 버튼으로 제공하거나 직접 입력을 했어야 했는데 이러한 방법들은 사용자들에게 불편하거나 복잡한 경험을 제공하고 있다고 생각 했습니다.</p>
+          <p class="case-body-text">쉽고 빠르게 변수 기능을 사용할 수 있는 방법을 고민했고, 명령어를 통해 변수를 호출하는 아이디어를 제안했습니다. 이 아이디어는 팀 내에서 좋은 반응을 얻었고 제품으로 출시될 수 있었습니다.</p>
+          <div class="case-content-block">
+            <img src="images/crm-01.png" alt="Research — 경쟁사 분석">
+          </div>
+        </div>
+      </div>
+
+      <!-- User Flow -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">User Flow <span class="case-section-sublabel">유저플로우</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">중괄호 명령을 사용하여 변수를 더 빠르게 추가할 수 있습니다.<br>메시지를 입력할 때 <code class="crm-code">{</code> 를 누르면 추가할 수 있는 변수 목록이 나타나고, 원하는 변수를 마우스나 방향키로 더 빠르게 추가할 수 있습니다.<br>변수 없이 <code class="crm-code">{</code> 를 입력하려면 <strong>Esc</strong>를 눌러 변수 목록을 닫습니다.</p>
+          <div class="case-content-block">
+            <img src="images/crm-02.png" alt="User Flow — 변수 입력 플로우">
+          </div>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design <span class="case-section-sublabel">디자인</span></p>
+        </div>
+        <div class="case-section-body">
+          <div class="case-img-pair">
+            <div class="case-img-zoom-wrap" style="border-radius: 20px 20px 0 0;">
+              <img src="images/crm-03-1.png" alt="@개인화 변수 디자인">
+              <button class="case-zoom-btn" onclick="openLightbox('images/crm-03-1-original.png')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                확대보기
+              </button>
+            </div>
+            <div class="case-content-block" style="border-radius: 0 0 20px 20px;">
+              <img src="images/crm-03-2.png" alt="@캐러셀 템플릿 디자인">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -71,6 +124,11 @@
           <p class="case-section-label">Results and<br>Achievements <span class="case-section-sublabel">결과 및 성과</span></p>
         </div>
         <div class="case-section-body">
+          <p class="case-body-text">캐러셀 유형 배포 후 1개월 동안 발송된 친구톡 메세지중 발송건수 <strong>17,414</strong>건<strong>(24.7%)</strong>으로 <strong>2</strong>위를 달성했습니다.</p>
+          <p class="case-body-text">높은 오픈율은 사용자들이 알림 센터를 활발하게 이용하고 있다는 것을 시사하며, 우리 서비스가 사용자들의 요구를 충족시키고 유용한 정보를 제공하고 있는 것으로 해석될 수 있습니다. 나아가 우리의 제품과 서비스에 대한 성장과 발전에도 긍정적인 영향을 미칠 것으로 기대됩니다.</p>
+          <div class="case-content-block">
+            <img src="images/crm-04.png" alt="Results — 메시지 발송 건수">
+          </div>
         </div>
       </div>
 

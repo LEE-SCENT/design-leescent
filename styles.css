@@ -1123,6 +1123,21 @@ a {
   border-radius: 0 0 20px 20px;
 }
 
+.case-img-pair .case-img-zoom-wrap {
+  border-radius: 20px 20px 0 0;
+}
+
+/* ─── CRM inline code ─── */
+.crm-code {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.95em;
+  font-style: normal;
+}
+
 .case-hscroll-wrap {
   overflow-x: auto;
   overflow-y: hidden;
