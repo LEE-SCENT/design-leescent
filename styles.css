@@ -2540,6 +2540,7 @@ a {
 .case-metric-tilde {
   font-size: 15px;
   line-height: 1.2;
+  vertical-align: middle;
 }
 
 .case-metric-num {
