@@ -1107,7 +1107,21 @@ a {
   display: block;
 }
 
-/* ─── Horizontal Scroll Image ─── */
+/* ─── Horizontal Scroll Image + Pair Group ─── */
+
+.case-img-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.case-img-pair .case-hscroll-wrap {
+  border-radius: 20px 20px 0 0;
+}
+
+.case-img-pair .case-content-block {
+  border-radius: 0 0 20px 20px;
+}
 
 .case-hscroll-wrap {
   overflow-x: auto;
