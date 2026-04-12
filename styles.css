@@ -1107,6 +1107,24 @@ a {
   display: block;
 }
 
+/* ─── Horizontal Scroll Image ─── */
+
+.case-hscroll-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.case-hscroll-wrap img {
+  /* Scale proportionally to 2196px-wide images so height is preserved;
+     wider image (2680px) overflows container and enables horizontal scroll */
+  width: calc(100% * 2680 / 2196);
+  max-width: none;
+  height: auto;
+  display: block;
+}
+
 /* ─── Design Process ─── */
 
 .case-process-body {
