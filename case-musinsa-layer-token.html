@@ -22,14 +22,219 @@
         <span class="copyright">© 2026</span>
       </div>
 
-      <!-- TBD Placeholder -->
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner">
+          <img src="images/thumb-musinsa-layer-token.png" alt="">
+        </div>
+      </div>
+
+      <!-- Overview -->
       <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
+        </div>
         <div class="case-section-body">
-          <p class="case-body-text" style="opacity: 0.4;">TBD</p>
+          <p class="case-body-text"><strong>Token Studio + GitHub 기반 토큰 운영 구조 설계</strong></p>
+          <p class="case-body-text">MUSINSA PBO Design System Layer는 디자인 토큰을 디자인과 개발을 연결하는 핵심 데이터로 정의하고, 이를 하나의 소스로 관리할 수 있는 운영 구조를 함께 설계했습니다. Token Studio와 GitHub를 연동하여 디자이너가 직접 토큰을 생성·수정하고, 동일한 데이터를 코드에서도 사용할 수 있는 환경을 구축했습니다. 이를 통해 디자인 토큰은 더 이상 디자인 산출물이 아니라 시스템 전반에서 일관되게 사용되는 데이터로 작동하도록 구성했습니다.</p>
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Collaborators <span class="case-section-sublabel">협업</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">Platform designer(1)</p>
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Goals <span class="case-section-sublabel">목표</span></p>
+        </div>
+        <div class="case-section-body">
+          <ul class="case-body-list">
+            <li>토큰을 단일 소스로 관리하는 <strong>SSOT</strong>(Single Source of Truth) 구조 설계</li>
+            <li>역할 기반 Token 체계 및 네이밍 컨벤션 정립 (primitive / functional / component)</li>
+            <li>디자인과 개발이 동일한 데이터를 사용하는 협업 환경 구축</li>
+            <li>디자이너 주도의 토큰 운영 체계 확립</li>
+            <li>토큰 변경 이력 및 버전 관리 가능 구조 구축</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Design Process -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design Process <span class="case-section-sublabel">디자인 프로세스</span></p>
+        </div>
+        <div class="case-section-body">
+          <div class="case-process-body">
+            <div class="case-process-inner">
+              <div class="case-process">
+                <div class="case-process-item">
+                  <p class="case-process-item-title">운영 방식 리서치</p>
+                </div>
+                <div class="case-process-arrow">→</div>
+                <div class="case-process-item">
+                  <p class="case-process-item-title">토큰 관리 구조 정의</p>
+                </div>
+                <div class="case-process-arrow">→</div>
+                <div class="case-process-item">
+                  <p class="case-process-item-title">Token Studio + GitHub 연동</p>
+                </div>
+                <div class="case-process-arrow">→</div>
+                <div class="case-process-loop-group">
+                  <div class="case-process-loop-items">
+                    <div class="case-process-item">
+                      <p class="case-process-item-title">디자인 토큰 구조 설계</p>
+                    </div>
+                    <div class="case-process-arrow case-process-arrow--highlight" style="color: rgba(255,255,255,1)"><span>→</span><span>←</span></div>
+                    <div class="case-process-item">
+                      <p class="case-process-item-title">디자인 토큰 네이밍 규칙 정의</p>
+                    </div>
+                    <div class="case-process-arrow case-process-arrow--highlight" style="color: rgba(255,255,255,1)"><span>→</span><span>←</span></div>
+                    <div class="case-process-item">
+                      <p class="case-process-item-title">디자인 토큰 설계</p>
+                    </div>
+                    <div class="case-process-arrow case-process-arrow--highlight" style="color: rgba(255,255,255,1)"><span>→</span><span>←</span></div>
+                    <div class="case-process-item">
+                      <p class="case-process-item-title">GitHub 배포 및 Styles &amp; Variable 적용</p>
+                    </div>
+                  </div>
+                  <p class="case-process-label" style="color: var(--white)">Testing and iteration</p>
+                </div>
+                <div class="case-process-arrow">→</div>
+                <div class="case-process-item">
+                  <p class="case-process-item-title">라이브러리 배포</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Research <span class="case-section-sublabel">연구</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">디자인 시스템이 지속적으로 운영되기 위해서는 토큰을 어떻게 관리하고, 누가 운영할 것인지에 대한 기준이 필요했습니다. 일반적인 협업 구조에서는 디자인과 개발이 분리된 상태에서 서로를 해석하며 작업하게 되고, 이 과정에서 불필요한 커뮤니케이션 비용과 반영 지연이 발생하게 됩니다. 즉, 디자인과 코드가 동일한 데이터를 기반으로 동작하지 않는 구조는 시스템 확장 시 일관성을 유지하기 어렵다고 판단했습니다.</p>
+          <div class="case-content-block">
+            <img src="images/musinsa-layer-token-01.png" alt="Research — General vs Layer Design System">
+          </div>
+          <p class="case-body-text">이러한 구조적 한계를 해결하기 위해 토큰을 단순히 개발에 전달하는 디자인 산출물이 아닌 시스템 전반에서 공유되는 데이터로 정의하고, Token Studio와 GitHub를 연동한 토큰 관리 구조를 설계했습니다.</p>
+        </div>
+      </div>
+
+      <!-- Design Results — Token Naming Convention -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design Results<br>Token Naming Convention <span class="case-section-sublabel">토큰 네이밍 구조</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">토큰을 일관되게 정의하고 확장할 수 있도록 역할 기반 네이밍 규칙을 설계했습니다. 이 구조를 통해 디자이너와 개발자가 동일한 기준으로 토큰을 이해하고 사용할 수 있도록 공통 언어 체계를 구축했습니다.</p>
+          <div class="case-content-block">
+            <img src="images/musinsa-layer-token-02.png" alt="Token Naming Convention — 토큰 네이밍 구조">
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Results — Token Management Architecture -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Design Results<br>Token Management Architecture <span class="case-section-sublabel">토큰 관리 구조</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">Token Studio와 GitHub를 연동하여 토큰을 단일 소스로 관리하고, Figma Styles &amp; Variables와 코드에 동일한 데이터로 적용되는 구조를 구축했습니다.</p>
+          <div class="case-hscroll-wrap case-hscroll-wrap-wide">
+            <img src="images/musinsa-layer-token-03.png" alt="Token Management Architecture — SSOT (Single Source of Truth)">
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing and Integration into Product -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Testing and Integration<br>into Product <span class="case-section-sublabel">테스트와 제품 통합</span></p>
+        </div>
+        <div class="case-section-body">
+          <p class="case-body-text">토큰 구조가 실제 제품 환경에서도 일관되게 작동하는지 검증하기 위해 컴포넌트 및 디자인 시스템 라이브러리에 적용 테스트를 진행했습니다. 다음 테스트를 통해 실제 제품 환경에서 작동 가능한 시스템임을 확인했습니다.</p>
+          <ul class="case-body-list">
+            <li>주요 컴포넌트(Button, Control 등)에 토큰 적용</li>
+            <li>Token 변경 시 UI 전반 반영 흐름 확인</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Results and Achievements -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Results and<br>Achievements <span class="case-section-sublabel">결과 및 성과</span></p>
+        </div>
+        <div class="case-section-body">
+          <div class="case-metric-group">
+            <div class="case-metric-card">
+              <p class="case-metric-value">~ 50% ↓</p>
+              <p class="case-metric-label">Update Speed</p>
+            </div>
+            <div class="case-metric-card">
+              <p class="case-metric-value">~ 30% ↓</p>
+              <p class="case-metric-label">Communication Cost</p>
+            </div>
+          </div>
+          <div class="case-flow-compare">
+            <div class="case-flow-row">
+              <p class="case-flow-type">General Workflow</p>
+              <p class="case-flow-steps">Design → <span class="case-flow-strike">Spec 전달 → Dev 구현</span> → 제품 반영</p>
+              <p class="case-flow-warn">⚠️ 반복 커뮤니케이션 발생 구간</p>
+            </div>
+            <div class="case-flow-divider">↓</div>
+            <div class="case-flow-row">
+              <p class="case-flow-type">Token-based Workflow (Layer Design System)</p>
+              <p class="case-flow-steps">Token 수정 → 제품 반영</p>
+            </div>
+          </div>
+          <p class="case-body-text">단일 소스로 토큰을 관리하는 구조를 통해 일관된 UI 경험을 확보하고, 유지보수 효율을 향상시켰습니다. 일반적인 전달 기반 프로세스와 비교했을 때, 제품 반영 단계를 단순화 하여 반영 속도를 약 50% 이상 단축할 수 있었고, 스타일 정의 및 확인 과정에서 발생하던 반복 커뮤니케이션 비용 역시 약 30% 이상 줄일 수 있었습니다.</p>
+          <p class="case-body-text">이 구조는 이후 Layer 2.0 : Core Design System 설계로 확장될 수 있는 기반이 되었습니다.</p>
+        </div>
+      </div>
+
+      <!-- Case Footer Nav -->
+      <div class="case-footer-nav">
+        <div class="case-footer-nav-header">
+          <p class="case-footer-nav-title">Layer : Designer-driven Token Management</p>
+        </div>
+        <div class="case-footer-nav-body">
+          <a href="case-clay-layout.html" class="case-footer-nav-link"><span class="case-nav-arrow">←</span><span class="case-nav-label">Clay 2.0 : Layout (Grid &amp; Breakpoints)</span></a>
+          <span class="case-footer-nav-link case-footer-nav-next" style="opacity: 0.3; cursor: default;"><span class="case-nav-label">Layer 2.0 : Core Design System</span><span class="case-nav-arrow">→</span></span>
         </div>
       </div>
 
     </div>
   </div>
+  <script>
+    (function () {
+      function fitFooterName() {
+        var el = document.querySelector('.footer-name');
+        if (!el) return;
+        var parent = el.parentElement;
+        var lo = 8, hi = 600;
+        while (hi - lo > 0.5) {
+          var mid = (lo + hi) / 2;
+          el.style.fontSize = mid + 'px';
+          if (el.scrollWidth <= parent.clientWidth) lo = mid;
+          else hi = mid;
+        }
+        el.style.fontSize = lo + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fitFooterName);
+      window.addEventListener('resize', fitFooterName);
+    })();
+  </script>
 </body>
 </html>
