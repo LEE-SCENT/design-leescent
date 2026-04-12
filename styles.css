@@ -2036,6 +2036,10 @@ a {
 /* ─── Case Study Responsive ─── */
 
 @media (max-width: 900px) {
+  .case-hscroll-wrap img {
+    width: 670px; /* 1340px의 50% */
+  }
+
   .case-section {
     flex-direction: column;
     gap: 0;
