@@ -600,6 +600,7 @@ a {
 }
 
 .exp-date {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: -0.36px;
