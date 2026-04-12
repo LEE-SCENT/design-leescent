@@ -1492,6 +1492,10 @@ a {
   cursor: default;
 }
 
+.case-body-link-arrow {
+  font-family: var(--font-pretendard);
+}
+
 .case-body-link-soon {
   opacity: 0.5;
 }
