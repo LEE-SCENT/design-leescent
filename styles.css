@@ -2482,3 +2482,114 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ─── Case Metrics ─── */
+
+.case-metric-group {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.case-metric-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 40px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-metric-value {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  color: var(--white);
+}
+
+.case-metric-label {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--white-50);
+}
+
+/* ─── Case Flow Compare ─── */
+
+.case-flow-compare {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-flow-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.case-flow-type {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--white-50);
+}
+
+.case-flow-steps {
+  font-family: var(--font-pretendard);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.32px;
+  color: var(--white);
+}
+
+.case-flow-strike {
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+.case-flow-warn {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--white-50);
+}
+
+.case-flow-divider {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 16px 0;
+}
+
+/* ─── Wide Horizontal Scroll (2x image at 2898px display width) ─── */
+
+.case-hscroll-wrap-wide img {
+  width: 2898px;
+}
+
+@media (max-width: 900px) {
+  .case-metric-group {
+    flex-direction: column;
+  }
+
+  .case-flow-compare {
+    padding: 24px 20px;
+  }
+
+  .case-hscroll-wrap-wide img {
+    width: 1449px;
+  }
+}
