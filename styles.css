@@ -2483,95 +2483,173 @@ a {
   }
 }
 
-/* ─── Case Metrics ─── */
+/* ─── Case Indicators Card ─── */
+
+.case-indicators-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
 .case-metric-group {
   display: flex;
   gap: 2px;
-  margin-bottom: 2px;
 }
 
 .case-metric-card {
   flex: 1;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  background: rgba(81, 201, 220, 0.15);
   padding: 40px 24px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 8px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  text-align: center;
 }
 
 .case-metric-value {
-  font-family: var(--font-helvetica);
-  font-weight: 500;
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 0;
+  line-height: 0;
+  color: #51c9dc;
+  white-space: nowrap;
+}
+
+.case-metric-tilde {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.case-metric-num {
   font-size: 40px;
-  line-height: 1.1;
-  letter-spacing: -0.8px;
-  color: var(--white);
+  line-height: 1.2;
+}
+
+.case-metric-unit {
+  font-family: var(--font-pretendard);
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .case-metric-label {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
-  color: var(--white-50);
+  color: #51c9dc;
 }
 
 /* ─── Case Flow Compare ─── */
 
 .case-flow-compare {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.case-flow-row {
+.case-flow-general {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.25;
+  width: 100%;
+}
+
+.case-flow-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #51c9dc;
+  width: 100%;
 }
 
 .case-flow-type {
   font-family: var(--font-helvetica);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--white-50);
-}
-
-.case-flow-steps {
-  font-family: var(--font-pretendard);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.32px;
+  line-height: 1.4;
+  text-align: center;
   color: var(--white);
 }
 
-.case-flow-strike {
-  text-decoration: line-through;
-  text-decoration-color: rgba(255, 255, 255, 0.4);
+.case-flow-layer .case-flow-type {
+  color: #51c9dc;
+}
+
+.case-flow-steps-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.case-flow-step {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.case-flow-layer .case-flow-step {
+  color: #51c9dc;
+}
+
+.case-flow-arrow-char {
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.case-flow-layer .case-flow-arrow-char {
+  color: #51c9dc;
+}
+
+.case-flow-underlined {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.case-flow-underline-img {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+  object-fit: fill;
 }
 
 .case-flow-warn {
-  font-family: var(--font-helvetica);
-  font-weight: 400;
-  font-size: 13px;
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 10px;
   line-height: 1.4;
-  color: var(--white-50);
+  text-align: center;
+  color: var(--white);
+  white-space: nowrap;
 }
 
-.case-flow-divider {
-  text-align: center;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 16px 0;
+.case-layer-arrow {
+  width: 20px;
+  height: 64px;
+  flex-shrink: 0;
 }
 
 /* ─── Wide Horizontal Scroll (2x image at 2898px display width) ─── */
