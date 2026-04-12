@@ -1494,6 +1494,9 @@ a {
 
 .case-body-link-arrow {
   font-family: var(--font-pretendard);
+  font-size: 10px;
+  vertical-align: super;
+  color: #00E600;
 }
 
 .case-body-link-soon {
