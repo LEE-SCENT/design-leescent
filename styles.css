@@ -2037,7 +2037,7 @@ a {
 
 @media (max-width: 900px) {
   .case-hscroll-wrap img {
-    width: 670px; /* 1340px의 50% */
+    width: 335px; /* 1340px의 25% */
   }
 
   .case-section {
