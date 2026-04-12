@@ -2533,16 +2533,16 @@ a {
 .case-metric-value {
   font-family: var(--font-pretendard);
   font-weight: 600;
-  font-size: 0;
-  line-height: 0;
   color: #51c9dc;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .case-metric-tilde {
   font-size: 15px;
   line-height: 1.2;
-  vertical-align: middle;
 }
 
 .case-metric-num {
