@@ -345,6 +345,9 @@ a {
 }
 
 .arrow {
+  font-family: var(--font-pretendard);
+  font-size: 10px;
+  vertical-align: super;
   color: #00E600;
 }
 
