@@ -1241,10 +1241,18 @@ a {
 }
 
 .case-process-loop-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+}
+
+.case-process-loop-group .case-process-label {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .case-process-loop-items {
