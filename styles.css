@@ -2797,7 +2797,7 @@ a {
 .ld-col-mode-a { width: 88px;  flex-shrink: 0; }
 .ld-col-mode-b { width: 168px; flex-shrink: 0; }
 .ld-col-width  { width: 120px; flex-shrink: 0; }
-.ld-col-usage  { flex: 1 0 0; min-width: 200px; }
+.ld-col-usage  { flex: 0 0 auto; white-space: nowrap; }
 
 .ld-table-header {
   border-bottom: 1px solid #1D2027;
@@ -2809,6 +2809,7 @@ a {
 
 .ld-table-unit {
   font-size: 9px;
+  vertical-align: top;
 }
 
 .ld-table-row {
