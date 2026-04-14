@@ -2750,6 +2750,23 @@ a {
   display: block;
 }
 
+/* ─── LayerDesktop: Image + Table grouped wrapper ─── */
+
+.ld-img-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.ld-img-table-wrap .ld-result-img-block {
+  border-radius: 20px 20px 0 0;
+}
+
+.ld-img-table-wrap .ld-table {
+  border-radius: 0 0 20px 20px;
+}
+
 /* ─── LayerDesktop: Result Image Block (image with title label) ─── */
 
 .ld-result-img-block {
