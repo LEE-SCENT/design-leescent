@@ -2754,7 +2754,10 @@ a {
 .ld-result-img-block {
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  padding: 24px 40px 40px;
+}
+
+.case-img-group .case-content-block {
+  border-radius: 0;
 }
 
 .ld-result-img-title {
