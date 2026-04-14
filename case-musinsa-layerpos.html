@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LayerPOS : Design System — Jihyang (Scent) Lee</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="about-heading">
+        <div class="back-home">
+          <a href="cases.html" class="home-link">
+            <span class="home-icon">←</span>
+            Cases
+          </a>
+          <h1 class="about-title">LayerPOS : Design System</h1>
+        </div>
+        <span class="copyright">© 2026</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner">
+          <img src="images/thumb-musinsa-layerpos.png" alt="">
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Overview <span class="case-section-sublabel">개요</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Collaborators <span class="case-section-sublabel">협업</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="case-section">
+        <div class="case-section-header">
+          <p class="case-section-label">Goals <span class="case-section-sublabel">목표</span></p>
+        </div>
+        <div class="case-section-body">
+        </div>
+      </div>
+
+      <!-- Case Footer Nav -->
+      <div class="case-footer-nav">
+        <div class="case-footer-nav-header">
+          <p class="case-footer-nav-title">LayerPOS : Design System</p>
+        </div>
+        <div class="case-footer-nav-body">
+          <span class="case-footer-nav-link" style="opacity: 0.3; cursor: default;"><span class="case-nav-arrow">←</span><span class="case-nav-label">LayerDesktop : Design System</span></span>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    (function () {
+      function fitFooterName() {
+        var el = document.querySelector('.footer-name');
+        if (!el) return;
+        var parent = el.parentElement;
+        var lo = 8, hi = 600;
+        while (hi - lo > 0.5) {
+          var mid = (lo + hi) / 2;
+          el.style.fontSize = mid + 'px';
+          if (el.scrollWidth <= parent.clientWidth) lo = mid;
+          else hi = mid;
+        }
+        el.style.fontSize = lo + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fitFooterName);
+      window.addEventListener('resize', fitFooterName);
+    })();
+  </script>
+</body>
+</html>
