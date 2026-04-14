@@ -2693,3 +2693,144 @@ a {
     width: 1449px;
   }
 }
+
+/* ─── LayerDesktop: Research Image Row (2-up side by side) ─── */
+
+.case-img-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.case-img-row img {
+  flex: 1 0 0;
+  min-width: 0;
+  width: 0;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .case-img-row {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .case-img-row img {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* ─── LayerDesktop: Image Group (stacked with 2px gap) ─── */
+
+.case-img-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.case-img-group > * {
+  width: 100%;
+}
+
+.case-img-group img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── LayerDesktop: Result Image Block (image with title label) ─── */
+
+.ld-result-img-block {
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 24px 40px 40px;
+}
+
+.ld-result-img-title {
+  font-family: var(--font-pretendard);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 24px 0;
+}
+
+.ld-result-img-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── LayerDesktop: Column Width Table ─── */
+
+.ld-table {
+  background: rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+  padding: 0 0 20px;
+}
+
+.ld-table-header,
+.ld-table-row {
+  display: flex;
+  gap: 8px;
+  padding: 0 40px;
+  font-family: var(--font-pretendard);
+  font-size: 14px;
+  min-width: max-content;
+  align-items: center;
+}
+
+.ld-col-mode-a { width: 88px;  flex-shrink: 0; }
+.ld-col-mode-b { width: 168px; flex-shrink: 0; }
+.ld-col-width  { width: 120px; flex-shrink: 0; }
+.ld-col-usage  { flex: 1 0 0; min-width: 200px; }
+
+.ld-table-header {
+  border-bottom: 1px solid #1D2027;
+  font-weight: 600;
+  color: #717680;
+  line-height: 2.4;
+  padding-top: 24px;
+}
+
+.ld-table-unit {
+  font-size: 9px;
+}
+
+.ld-table-row {
+  border-bottom: 1px solid #1D2027;
+  min-height: 48px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.ld-table-row:last-of-type {
+  border-bottom: none;
+}
+
+.ld-table-bold {
+  font-weight: 700;
+}
+
+.ld-table-invisible {
+  opacity: 0;
+}
+
+.ld-table-footnote {
+  font-family: var(--font-pretendard);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 12px 40px 0;
+  margin: 0;
+  min-width: max-content;
+}
