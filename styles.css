@@ -1148,6 +1148,11 @@ a {
   overflow-y: hidden;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
+  scrollbar-width: none;
+}
+
+.case-hscroll-wrap::-webkit-scrollbar {
+  display: none;
 }
 
 .case-hscroll-wrap img {
@@ -1840,6 +1845,11 @@ a {
   overflow-x: auto;
   background: rgba(255, 255, 255, 0.1);
   padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.bp-table::-webkit-scrollbar {
+  display: none;
 }
 
 .bp-table-header,
@@ -1953,6 +1963,11 @@ a {
 .bp-chart-wrap {
   overflow-x: auto;
   border-radius: 12px;
+  scrollbar-width: none;
+}
+
+.bp-chart-wrap::-webkit-scrollbar {
+  display: none;
 }
 .bp-chart {
   position: relative;
@@ -2812,6 +2827,11 @@ a {
   display: none;
 }
 
+.ld-table-inner {
+  width: max-content;
+  min-width: 100%;
+}
+
 .ld-table-header,
 .ld-table-row {
   display: flex;
@@ -2820,7 +2840,6 @@ a {
   font-family: var(--font-pretendard);
   font-size: 14px;
   align-items: center;
-  min-width: max-content;
 }
 
 .ld-col-mode-a { width: 88px;  flex-shrink: 0; }
