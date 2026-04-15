@@ -2810,8 +2810,7 @@ a {
   font-family: var(--font-pretendard);
   font-size: 14px;
   align-items: center;
-  width: max-content;
-  min-width: 100%;
+  min-width: max-content;
 }
 
 .ld-col-mode-a { width: 88px;  flex-shrink: 0; }
