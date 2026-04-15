@@ -1165,6 +1165,11 @@ a {
   overflow-x: auto;
   overflow-y: visible;
   padding-bottom: 40px;
+  scrollbar-width: none;
+}
+
+.case-process-body::-webkit-scrollbar {
+  display: none;
 }
 
 .case-process-inner {
@@ -2800,6 +2805,11 @@ a {
   overflow-x: auto;
   padding: 0 0 20px;
   min-width: 0;
+  scrollbar-width: none;
+}
+
+.ld-table::-webkit-scrollbar {
+  display: none;
 }
 
 .ld-table-header,
