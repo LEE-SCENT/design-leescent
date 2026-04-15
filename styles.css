@@ -2811,6 +2811,7 @@ a {
   font-size: 14px;
   align-items: center;
   width: max-content;
+  min-width: 100%;
 }
 
 .ld-col-mode-a { width: 88px;  flex-shrink: 0; }
