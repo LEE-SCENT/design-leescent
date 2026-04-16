@@ -345,6 +345,9 @@ a {
 }
 
 .arrow {
+  font-family: var(--font-pretendard);
+  font-size: 10px;
+  vertical-align: super;
   color: #00E600;
 }
 
@@ -597,6 +600,7 @@ a {
 }
 
 .exp-date {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: -0.36px;
@@ -1011,6 +1015,7 @@ a {
 
 .case-section-header {
   flex: 0 0 25%;
+  min-width: 0;
   padding: 20px 20px 20px 0;
   border-right: 1px solid var(--white);
   display: flex;
@@ -1021,7 +1026,7 @@ a {
 
 .case-section-label {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1;
   color: var(--white);
@@ -1143,6 +1148,11 @@ a {
   overflow-y: hidden;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
+  scrollbar-width: none;
+}
+
+.case-hscroll-wrap::-webkit-scrollbar {
+  display: none;
 }
 
 .case-hscroll-wrap img {
@@ -1160,6 +1170,11 @@ a {
   overflow-x: auto;
   overflow-y: visible;
   padding-bottom: 40px;
+  scrollbar-width: none;
+}
+
+.case-process-body::-webkit-scrollbar {
+  display: none;
 }
 
 .case-process-inner {
@@ -1484,6 +1499,23 @@ a {
 
 .case-footer-nav-next {
   justify-content: flex-end;
+}
+
+.case-body-link-disabled {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: default;
+}
+
+.case-body-link-arrow {
+  font-family: var(--font-pretendard);
+  font-size: 10px;
+  vertical-align: super;
+  color: #00E600;
+}
+
+.case-body-link-soon {
+  opacity: 0.5;
 }
 
 .case-nav-label {
@@ -1813,6 +1845,11 @@ a {
   overflow-x: auto;
   background: rgba(255, 255, 255, 0.1);
   padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.bp-table::-webkit-scrollbar {
+  display: none;
 }
 
 .bp-table-header,
@@ -1926,6 +1963,11 @@ a {
 .bp-chart-wrap {
   overflow-x: auto;
   border-radius: 12px;
+  scrollbar-width: none;
+}
+
+.bp-chart-wrap::-webkit-scrollbar {
+  display: none;
 }
 .bp-chart {
   position: relative;
@@ -2409,7 +2451,7 @@ a {
 
 .ds-result-ol {
   font-family: var(--font-helvetica);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.3;
   color: var(--white);
@@ -2483,95 +2525,174 @@ a {
   }
 }
 
-/* ─── Case Metrics ─── */
+/* ─── Case Indicators Card ─── */
+
+.case-indicators-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
 .case-metric-group {
   display: flex;
   gap: 2px;
-  margin-bottom: 2px;
 }
 
 .case-metric-card {
   flex: 1;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  background: rgba(81, 201, 220, 0.15);
   padding: 40px 24px;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
+  text-align: center;
+}
+
+.case-metric-value {
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  color: #51c9dc;
+  white-space: nowrap;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.case-metric-value {
-  font-family: var(--font-helvetica);
-  font-weight: 500;
+.case-metric-tilde {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.case-metric-num {
   font-size: 40px;
-  line-height: 1.1;
-  letter-spacing: -0.8px;
-  color: var(--white);
+  line-height: 1.2;
+}
+
+.case-metric-unit {
+  font-family: var(--font-pretendard);
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 .case-metric-label {
   font-family: var(--font-helvetica);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
-  color: var(--white-50);
+  color: #51c9dc;
 }
 
 /* ─── Case Flow Compare ─── */
 
 .case-flow-compare {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.case-flow-row {
+.case-flow-general {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.25;
+  width: 100%;
+}
+
+.case-flow-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #51c9dc;
+  width: 100%;
 }
 
 .case-flow-type {
   font-family: var(--font-helvetica);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--white-50);
-}
-
-.case-flow-steps {
-  font-family: var(--font-pretendard);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.32px;
+  line-height: 1.4;
+  text-align: center;
   color: var(--white);
 }
 
-.case-flow-strike {
-  text-decoration: line-through;
-  text-decoration-color: rgba(255, 255, 255, 0.4);
+.case-flow-layer .case-flow-type {
+  color: #51c9dc;
+}
+
+.case-flow-steps-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.case-flow-step {
+  font-family: var(--font-helvetica);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.case-flow-layer .case-flow-step {
+  color: #51c9dc;
+}
+
+.case-flow-arrow-char {
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.case-flow-layer .case-flow-arrow-char {
+  color: #51c9dc;
+}
+
+.case-flow-underlined {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.case-flow-underline-img {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+  object-fit: fill;
 }
 
 .case-flow-warn {
-  font-family: var(--font-helvetica);
-  font-weight: 400;
-  font-size: 13px;
+  font-family: var(--font-pretendard);
+  font-weight: 600;
+  font-size: 10px;
   line-height: 1.4;
-  color: var(--white-50);
+  text-align: center;
+  color: var(--white);
+  white-space: nowrap;
 }
 
-.case-flow-divider {
-  text-align: center;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 16px 0;
+.case-layer-arrow {
+  width: 20px;
+  height: 64px;
+  flex-shrink: 0;
 }
 
 /* ─── Wide Horizontal Scroll (2x image at 2898px display width) ─── */
@@ -2592,4 +2713,177 @@ a {
   .case-hscroll-wrap-wide img {
     width: 1449px;
   }
+}
+
+/* ─── LayerDesktop: Research Image Row (2-up side by side) ─── */
+
+.case-img-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.case-img-row img {
+  flex: 1 0 0;
+  min-width: 0;
+  width: 0;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .case-img-row {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .case-img-row img {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* ─── LayerDesktop: Image Group (stacked with 2px gap) ─── */
+
+.case-img-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.case-img-group > * {
+  width: 100%;
+}
+
+.case-img-group img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── LayerDesktop: Image + Table grouped wrapper ─── */
+
+.ld-img-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  min-width: 0;
+}
+
+.ld-img-table-wrap .ld-result-img-block {
+  border-radius: 20px 20px 0 0;
+}
+
+.ld-img-table-wrap .ld-table {
+  border-radius: 0 0 20px 20px;
+}
+
+/* ─── LayerDesktop: Result Image Block (image with title label) ─── */
+
+.ld-result-img-block {
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.case-img-group .case-content-block {
+  border-radius: 0;
+}
+
+.ld-result-img-title {
+  font-family: var(--font-pretendard);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 24px 0;
+}
+
+.ld-result-img-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── LayerDesktop: Column Width Table ─── */
+
+.ld-table {
+  background: rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+  padding: 0 0 20px;
+  min-width: 0;
+  scrollbar-width: none;
+}
+
+.ld-table::-webkit-scrollbar {
+  display: none;
+}
+
+.ld-table-inner {
+  width: max-content;
+  min-width: 100%;
+}
+
+.ld-table-header,
+.ld-table-row {
+  display: flex;
+  gap: 8px;
+  padding: 0 40px;
+  font-family: var(--font-pretendard);
+  font-size: 14px;
+  align-items: center;
+}
+
+.ld-col-mode-a { width: 88px;  flex-shrink: 0; }
+.ld-col-mode-b { width: 168px; flex-shrink: 0; }
+.ld-col-width  { width: 120px; flex-shrink: 0; }
+.ld-col-usage  { flex: 0 0 auto; white-space: nowrap; }
+
+.ld-table-header {
+  border-bottom: 1px solid #1D2027;
+  font-weight: 600;
+  color: #717680;
+  line-height: 2.4;
+  padding-top: 24px;
+}
+
+.ld-table-unit {
+  font-size: 9px;
+  vertical-align: top;
+}
+
+.ld-table-row {
+  border-bottom: 1px solid #1D2027;
+  min-height: 48px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.ld-table-row:last-of-type {
+  border-bottom: none;
+}
+
+.ld-table-bold {
+  font-weight: 700;
+}
+
+.ld-table-invisible {
+  opacity: 0;
+}
+
+.ld-table-footnote {
+  font-family: var(--font-pretendard);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 12px 40px 0;
+  margin: 0;
+  min-width: max-content;
 }
