@@ -2887,3 +2887,11 @@ a {
   margin: 0;
   min-width: max-content;
 }
+
+@media (max-width: 760px) {
+  .ld-table-header,
+  .ld-table-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
