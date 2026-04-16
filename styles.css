@@ -58,7 +58,7 @@
   --white-25: rgba(255, 255, 255, 0.25);
   --container-width: 1536px;
   --font-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-pretendard: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-pretendard: 'Helvetica Neue', Helvetica, 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-garamond: 'Apple Garamond Light', 'Apple Garamond', Georgia, serif;
   --font-sans: var(--font-helvetica);
 }
